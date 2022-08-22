@@ -1,5 +1,39 @@
-.index__h1 {
-  color:#00cc99;
-  font-size: 20px;
-  font-weight: 400;
+.index__banner {
+  background-image: url(../images/luis-vidal-FodEsaNZs48-unsplash.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.index__place {
+  background-image: url(../images/pexels-ivan-samkov-41647711.png);
+  height: 379px;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: '';
+}
+
+.swiper {
+  width: 600px;
+  height: 350px;
+
+  &-button-next,
+  &-button-prev {
+    position: unset;
+    margin-top: 0;
+  }
+
+  &-buttons {
+    position: absolute;
+    top: -20px;
+    left: 30%;
+    z-index: 1;
+    transform: translateX(-50%);
+  }
+
 }
