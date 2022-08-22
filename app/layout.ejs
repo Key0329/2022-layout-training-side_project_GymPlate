@@ -18,12 +18,12 @@
 
 <body>
 
-  <header class="py-6 px-6 bg-secondary letter-space-1">
+  <header class="py-6 px-6 bg-secondary fixed-top letter-space-1">
     <div class="container-fluid d-flex justify-content-between align-items-center">
       <!-- header logo -->
-      <h2><a class="fw-bold" href="#">Gym Plate</a></h2>
+      <h2><a class="fw-bold lh-1" href="#">Gym Plate</a></h2>
       <!-- header nav -->
-      <nav>
+      <nav class="d-none d-lg-block">
         <ul class="nav nav-pills">
           <li class="nav-item">
             <a class="btn btn-outline-white rounded-pill fs-7 py-2 px-8" aria-current="page" href="#">首頁</a>
@@ -35,12 +35,41 @@
             <a class="btn btn-outline-white rounded-pill fs-7 py-2 px-8 ms-8" href="#">看板分類</a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-outline-white rounded-pill fs-7 position-relative deco-border--header-nav py-2 px-8 ms-20" href="#">登入</a>
+            <a class="btn btn-outline-white rounded-pill fs-7 d-flex align-items-center position-relative deco-border--header-nav py-2 px-8 ms-20" href="#"><i class="material-icons-round align-middle me-1 ms-auto">
+              account_circle
+            </i><p class="mb-0">登入</p></a>
           </li>
         </ul>
       </nav>
+      <!-- Ham -->
+      <a class="d-lg-none text-white fs-2" data-bs-toggle="collapse" href="#collapseHamMenu" role="button" style="height: 40px;">
+        <i class="bi bi-list"></i>
+      </a>
     </div>
   </header>
+
+  <!-- Ham Menu -->
+  <div class="collapse bg-secondary-opacity d-lg-none fixed-top" style="top:88px" id="collapseHamMenu">
+    <ul class="nav flex-column py-3">
+      <li class="nav-item text-center">
+        <a class="nav-link text-white hover-text-primary hover-bg-white py-3" aria-current="page" href="./index.html">首頁</a>
+      </li>
+      <li class="nav-item text-center">
+        <a class="nav-link text-white hover-text-primary hover-bg-white py-3" href="./class.html">場地列表</a>
+      </li>
+      <li class="nav-item text-center">
+        <a class="nav-link text-white hover-text-primary hover-bg-white py-3" href="./class.html">看板分類</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white hover-text-primary hover-bg-white d-flex py-3" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+          <i class="material-icons-round align-middle me-1 ms-auto">
+            account_circle
+          </i>
+          <p class="mb-0 me-auto">登入</p>
+        </a>
+      </li>
+    </ul>
+  </div>
 
   <%- contents %>
 
