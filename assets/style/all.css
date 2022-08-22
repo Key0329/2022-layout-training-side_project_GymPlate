@@ -9438,6 +9438,18 @@ fieldset:disabled .btn {
   height: 100vh !important;
 }
 
+.vh-75 {
+  height: 75vh !important;
+}
+
+.vh-50 {
+  height: 50vh !important;
+}
+
+.vh-25 {
+  height: 25vh !important;
+}
+
 .min-vh-100 {
   min-height: 100vh !important;
 }
@@ -12224,6 +12236,18 @@ fieldset:disabled .btn {
   .h-sm-auto {
     height: auto !important;
   }
+  .vh-sm-100 {
+    height: 100vh !important;
+  }
+  .vh-sm-75 {
+    height: 75vh !important;
+  }
+  .vh-sm-50 {
+    height: 50vh !important;
+  }
+  .vh-sm-25 {
+    height: 25vh !important;
+  }
   .flex-sm-fill {
     -webkit-box-flex: 1 !important;
         -ms-flex: 1 1 auto !important;
@@ -14317,6 +14341,18 @@ fieldset:disabled .btn {
   }
   .h-md-auto {
     height: auto !important;
+  }
+  .vh-md-100 {
+    height: 100vh !important;
+  }
+  .vh-md-75 {
+    height: 75vh !important;
+  }
+  .vh-md-50 {
+    height: 50vh !important;
+  }
+  .vh-md-25 {
+    height: 25vh !important;
   }
   .flex-md-fill {
     -webkit-box-flex: 1 !important;
@@ -16412,6 +16448,18 @@ fieldset:disabled .btn {
   .h-lg-auto {
     height: auto !important;
   }
+  .vh-lg-100 {
+    height: 100vh !important;
+  }
+  .vh-lg-75 {
+    height: 75vh !important;
+  }
+  .vh-lg-50 {
+    height: 50vh !important;
+  }
+  .vh-lg-25 {
+    height: 25vh !important;
+  }
   .flex-lg-fill {
     -webkit-box-flex: 1 !important;
         -ms-flex: 1 1 auto !important;
@@ -18505,6 +18553,18 @@ fieldset:disabled .btn {
   }
   .h-xl-auto {
     height: auto !important;
+  }
+  .vh-xl-100 {
+    height: 100vh !important;
+  }
+  .vh-xl-75 {
+    height: 75vh !important;
+  }
+  .vh-xl-50 {
+    height: 50vh !important;
+  }
+  .vh-xl-25 {
+    height: 25vh !important;
   }
   .flex-xl-fill {
     -webkit-box-flex: 1 !important;
@@ -20600,6 +20660,18 @@ fieldset:disabled .btn {
   .h-xxl-auto {
     height: auto !important;
   }
+  .vh-xxl-100 {
+    height: 100vh !important;
+  }
+  .vh-xxl-75 {
+    height: 75vh !important;
+  }
+  .vh-xxl-50 {
+    height: 50vh !important;
+  }
+  .vh-xxl-25 {
+    height: 25vh !important;
+  }
   .flex-xxl-fill {
     -webkit-box-flex: 1 !important;
         -ms-flex: 1 1 auto !important;
@@ -22671,11 +22743,14 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 body {
   line-height: 1.5;
   color: #9B9CA4;
+  letter-spacing: .04rem;
 }
 
 .logo-link {
@@ -22685,7 +22760,13 @@ body {
 }
 
 .letter-space-1 {
-  letter-spacing: 1px;
+  letter-spacing: 0.04rem;
+}
+
+.bg-dark-gradient {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8)));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
 }
 
 .hover-text-primary:hover {
@@ -22702,6 +22783,10 @@ body {
           transform: scale(1.3);
 }
 
+.hover-bg-white:hover {
+  background-color: #fff;
+}
+
 .transtion-slow {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -22711,17 +22796,56 @@ body {
 .deco-border--header-nav::before {
   content: "";
   position: absolute;
-  width: 2px;
+  width: 1px;
   height: 100%;
   background: #fff;
   top: 0;
-  left: -2rem;
+  left: -40px;
 }
 
-.index__h1 {
-  color: #00cc99;
-  font-size: 20px;
-  font-weight: 400;
+.bg-secondary-opacity {
+  background-color: #0C0C0C;
+  opacity: 0.8;
+}
+
+.index__banner {
+  background-image: url(../images/luis-vidal-FodEsaNZs48-unsplash.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.index__place {
+  background-image: url(../images/pexels-ivan-samkov-41647711.png);
+  height: 379px;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: '';
+}
+
+.swiper {
+  width: 600px;
+  height: 350px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  position: unset;
+  margin-top: 0;
+}
+
+.swiper-buttons {
+  position: absolute;
+  top: -20px;
+  left: 30%;
+  z-index: 1;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /*# sourceMappingURL=all.css.map */
