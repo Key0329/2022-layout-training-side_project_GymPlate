@@ -22848,4 +22848,41 @@ body {
           transform: translateX(-50%);
 }
 
+.index__swiper a::before {
+  content: "";
+  position: absolute;
+  top: 70%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0)));
+  background: -o-linear-gradient(bottom, black, rgba(0, 0, 0, 0));
+  background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+}
+
+.index__swiper a:hover::before {
+  top: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0.5)));
+  background: -o-linear-gradient(bottom, black, rgba(0, 0, 0, 0.5));
+  background: linear-gradient(to top, black, rgba(0, 0, 0, 0.5));
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.index__swiper__content {
+  position: absolute;
+  height: 452px;
+  bottom: -162px;
+  z-index: 2;
+}
+
+.index__swiper__content:hover {
+  bottom: 30px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 /*# sourceMappingURL=all.css.map */

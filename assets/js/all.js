@@ -9,7 +9,7 @@
 //   });
 // });
 // swiper
-var swiper1 = new Swiper('.swiper1', {
+var index__swiper = new Swiper('.index__swiper', {
   // Optional parameters
   // direction: 'horizontal',
   // loop: true,
