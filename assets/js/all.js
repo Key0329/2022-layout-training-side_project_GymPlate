@@ -13,7 +13,7 @@ var index__swiper = new Swiper('.index__swiper', {
   // Optional parameters
   // direction: 'horizontal',
   // loop: true,
-  freeMode: true,
+  // freeMode: true,
   slidesPerView: 1,
   spaceBetween: 10,
   // centeredSlides: true,
@@ -27,20 +27,20 @@ var index__swiper = new Swiper('.index__swiper', {
     prevEl: '.swiper-button-prev'
   },
   breakpoints: {
-    375: {
+    414: {
       slidesPerView: 2,
       spaceBetween: 20
     },
     576: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 20
     },
     992: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 40
     },
     1200: {
-      slidesPerView: 5,
+      slidesPerView: 4,
       spaceBetween: 40
     }
   }
