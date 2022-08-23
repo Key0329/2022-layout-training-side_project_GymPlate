@@ -9,7 +9,7 @@
 }
 
 
-// -------------------------index__place-------------------------
+// -------------------------place-------------------------
 
 .index__place {
   background-image: url(../images/pexels-ivan-samkov-41647711.png);
@@ -80,4 +80,57 @@
   //     bottom: 30px;
   //   }
   // }
+}
+
+// -------------------------feature-------------------------
+
+// sidebar fixed menu
+
+// .index__feature{
+//   &__sideMenu{
+//     position: fixed;
+//     top: 50%;
+//     left: 0px;
+//     transform: translate(0%, -50%);
+//     transition: all 0.3s ease 0s;
+//   }
+// }
+
+// feature image
+.index__feature {
+
+  &__sideMenu{
+    top: 50%;
+  }
+
+  &__img{
+    height: 600px;
+  }
+
+  &__content{
+    height: 600px;
+  }
+}
+
+// -------------------------about us-------------------------
+
+.index__aboutUs {
+  background-image: url(https://images.unsplash.com/photo-1534258936925-c58bed479fcb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  &::after{
+        content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          z-index: 0;
+          background: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0))
+      }
+  h2, p{
+    position: relative;
+    z-index: 2;
+  }
 }

@@ -289,6 +289,8 @@ $spacers: (
   32: $spacer * 8,
   34: $spacer * 8.5,
   36: $spacer * 9,
+  40: $spacer * 10,
+  50: $spacer * 12.5,
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -405,9 +407,10 @@ $border-color:                $gray-300 !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
-$border-radius:               .25rem !default;
-$border-radius-sm:            .2rem !default;
-$border-radius-lg:            .3rem !default;
+$border-radius:               .5rem !default; // 8px
+$border-radius-sm:            .25rem !default; // 4px
+$border-radius-lg:            .75rem !default; // 12px
+$border-radius-xl:            1rem !default; // 16px
 $border-radius-pill:          50rem !default;
 // scss-docs-end border-radius-variables
 
@@ -483,6 +486,7 @@ $h4-font-size:                $font-size-base * 1.5 !default; // 24px
 $h5-font-size:                $font-size-base * 1.25 !default; // 20px
 $h6-font-size:                $font-size-base !default; // 16px
 $h7-font-size:                $font-size-base * 0.875 !default; // 14px
+$h8-font-size:                $font-size-base * 0.75 !default; // 12px
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -494,6 +498,7 @@ $font-sizes: (
   5: $h5-font-size,
   6: $h6-font-size,
   7: $h7-font-size,
+  8: $h8-font-size,
 ) !default;
 // scss-docs-end font-sizes
 
