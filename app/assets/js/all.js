@@ -10,7 +10,7 @@
 
 // swiper
 
-const swiper1 = new Swiper('.swiper1', {
+const index__swiper = new Swiper('.index__swiper', {
   // Optional parameters
   // direction: 'horizontal',
   // loop: true,

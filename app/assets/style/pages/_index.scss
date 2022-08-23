@@ -1,3 +1,5 @@
+// -------------------------banner-------------------------
+
 .index__banner {
   background-image: url(../images/luis-vidal-FodEsaNZs48-unsplash.jpg);
   height: 100vh;
@@ -6,12 +8,17 @@
   background-attachment: fixed;
 }
 
+
+// -------------------------index__place-------------------------
+
 .index__place {
   background-image: url(../images/pexels-ivan-samkov-41647711.png);
   height: 379px;
   background-size: cover;
   background-position: center;
 }
+
+// swiper
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
@@ -36,4 +43,41 @@
     transform: translateX(-50%);
   }
 
+}
+
+// place link
+
+.index__swiper{
+  a{
+    &::before{
+      content: "";
+      position: absolute;
+      top: 70%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    }
+    &:hover::before{
+      top: 0;
+      background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.5));
+      transition: all 0.3s;
+    }
+  }
+  &__content{
+    position: absolute;
+    height: 452px;
+    bottom: -162px;
+    z-index: 2;
+    &:hover{
+      bottom: 30px;
+      transition: all 0.3s;
+    }
+  }
+  // &:hover{
+  //   .index__swiper_content{
+  //     bottom: 30px;
+  //   }
+  // }
 }
