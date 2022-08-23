@@ -23633,14 +23633,16 @@ body {
   background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
 }
 
-.index__swiper a:hover::before {
-  top: 0;
-  background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0.5)));
-  background: -o-linear-gradient(bottom, black, rgba(0, 0, 0, 0.5));
-  background: linear-gradient(to top, black, rgba(0, 0, 0, 0.5));
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
+@media (min-width: 767px) {
+  .index__swiper a:hover::before {
+    top: 0;
+    background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0.5)));
+    background: -o-linear-gradient(bottom, black, rgba(0, 0, 0, 0.5));
+    background: linear-gradient(to top, black, rgba(0, 0, 0, 0.5));
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
 }
 
 .index__swiper__content {
@@ -23650,11 +23652,13 @@ body {
   z-index: 2;
 }
 
-.index__swiper__content:hover {
-  bottom: 30px;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
+@media (min-width: 767px) {
+  .index__swiper__content:hover {
+    bottom: 30px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
 }
 
 .index__feature__sideMenu {
@@ -23662,11 +23666,23 @@ body {
 }
 
 .index__feature__img {
-  height: 600px;
+  height: 400px;
+}
+
+@media (min-width: 767px) {
+  .index__feature__img {
+    height: 600px;
+  }
 }
 
 .index__feature__content {
-  height: 600px;
+  height: auto;
+}
+
+@media (min-width: 767px) {
+  .index__feature__content {
+    height: 600px;
+  }
 }
 
 .index__aboutUs {
