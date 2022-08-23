@@ -59,10 +59,12 @@
       z-index: 1;
       background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
     }
-    &:hover::before{
-      top: 0;
-      background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.5));
-      transition: all 0.3s;
+    @include pad{
+      &:hover::before{
+        top: 0;
+        background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.5));
+        transition: all 0.3s;
+      }
     }
   }
   &__content{
@@ -70,9 +72,11 @@
     height: 452px;
     bottom: -162px;
     z-index: 2;
-    &:hover{
-      bottom: 30px;
-      transition: all 0.3s;
+    @include pad{
+      &:hover{
+        bottom: 30px;
+        transition: all 0.3s;
+      }
     }
   }
   // &:hover{
@@ -104,11 +108,17 @@
   }
 
   &__img{
-    height: 600px;
+    height: 400px;
+    @include pad{
+      height: 600px;
+    }
   }
 
   &__content{
-    height: 600px;
+    height: auto;
+    @include pad{
+      height: 600px;
+    }
   }
 }
 
