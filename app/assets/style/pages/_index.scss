@@ -31,6 +31,11 @@
   width: 600px;
   height: 350px;
 
+  &-wrapper{
+    -webkit-perspective: 3000;
+    -webkit-backface-visibility: hidden;
+  }
+
   &-button-next,
   &-button-prev {
     position: unset;
@@ -190,6 +195,13 @@
     }
   }
 }
+
+.nav-link{
+  &.active{
+    color: $secondary !important;
+  }
+}
+
 
 // -------------------------about us-------------------------
 
