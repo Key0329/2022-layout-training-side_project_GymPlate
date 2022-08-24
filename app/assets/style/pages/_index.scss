@@ -49,7 +49,7 @@
 
 // place link
 
-.index__swiper{
+.index__swiper__place{
   a{
     &::before{
       content: "";
@@ -138,7 +138,7 @@
       }
     }
 
-    &__coach::after{
+    &__trainer::after{
       content: "";
       position: absolute;
       height: 48px;
@@ -215,3 +215,74 @@
     z-index: 2;
   }
 }
+
+// -------------------------selected PT-------------------------
+
+.index__selectedPT{
+  &__img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  &__leaf{
+    width: 36px;
+    @include mobile{
+      width: 48px;
+    }
+    position: absolute;
+    top: -48px;
+    &--left{
+      top: 0;
+      left: -8px;
+      @include mobile{
+        left: 0;
+      }
+      @include mobile-md{
+        top: -24px;
+      }
+    }
+    &--right{
+      top: 0;
+      right: -8px;
+      transform: rotateY(180deg);
+      @include mobile{
+        right: 0;
+      }
+      @include mobile-md{
+        top: -24px;
+      }
+    }
+  }
+}
+
+.index__swiper__pt{
+  height: 100% !important;
+  .swiper-slide{
+    height: initial;
+  }
+  // a{
+  //   overflow: hidden;
+  //   :hover{
+  //     color: $secondary;
+  //     transition: all 0.5s ease 0s;
+  //   }
+  //   &::before{
+  //     content: "";
+  //     position: absolute;
+  //     background: $primary;
+  //     left: -40%;
+  //     bottom: -25%;
+  //     width: 150%;
+  //     height: 0%;
+  //     z-index: -1;
+  //     transition: all 0.5s ease 0s;
+  //     transform: rotate(25deg);
+  //     overflow: hidden;
+  //   }
+  //   &:hover::before{
+  //     height: 100%;
+  //   }
+  // }
+  
+}
+
