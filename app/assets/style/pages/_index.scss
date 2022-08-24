@@ -110,9 +110,76 @@
   }
 
   &__img{
-    height: 400px;
+    height: 300px;
     @include pad{
       height: 600px;
+    }
+
+    // small pic
+    &__gym::after{
+      content: "";
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      right: 5%;
+      top: 126px;
+      background-image: url(../images/fitness_center_FILL0_wght400_GRAD200_opsz48.svg);
+      opacity: 0.1;
+      transform: scale(2);
+      display: none;
+      @include mobile{
+        display: initial;
+      }
+      @include mobile-md{
+        right: 10%;
+      }
+      @include pad{
+        display: none;
+      }
+    }
+
+    &__coach::after{
+      content: "";
+      position: absolute;
+      height: 48px;
+      width: 48px;
+      left: 5%;
+      top: 126px;
+      background-image: url(../images/self_improvement_FILL1_wght400_GRAD200_opsz48.svg);
+      opacity: 0.1;
+      transform: scale(2);
+      display: none;
+      @include mobile{
+        display: initial;
+      }
+      @include mobile-md{
+        left: 10%;
+      }
+      @include pad{
+        display: none;
+      }
+    }
+
+    &__exp::after{
+      content: "";
+      position: absolute;
+      height: 48px;
+      width: 48px;
+      right: 5%;
+      top: 126px;
+      background-image: url(../images/forum_FILL1_wght400_GRAD200_opsz48.svg);
+      opacity: 0.1;
+      transform: scale(2);
+      display: none;
+      @include mobile{
+        display: initial;
+      }
+      @include mobile-md{
+        right: 10%;
+      }
+      @include pad{
+        display: none;
+      }
     }
   }
 

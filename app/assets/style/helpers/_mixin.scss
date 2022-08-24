@@ -16,13 +16,13 @@
     }
 }
 
-@mixin mobile {
+@mixin mobile-md {
     @media(min-width:414px) {
         @content;
     }
 }
 
-@mixin mobile-md {
+@mixin mobile {
     @media(min-width:374px) {
         @content;
     }
