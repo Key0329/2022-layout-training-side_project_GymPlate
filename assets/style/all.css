@@ -26392,7 +26392,9 @@ body {
 }
 
 .swiper-wrapper {
+  perspective: 3000;
   -webkit-perspective: 3000;
+  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
 
