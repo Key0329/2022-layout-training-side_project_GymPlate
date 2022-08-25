@@ -32,7 +32,9 @@
   height: 350px;
 
   &-wrapper{
+    perspective: 3000;
     -webkit-perspective: 3000;
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
   }
 
