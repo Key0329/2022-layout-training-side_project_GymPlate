@@ -68,6 +68,7 @@ $colors: (
 
 // scss-docs-start theme-color-variables
 $primary:       #DB4F00; // $blue !default;
+$primary-light: rgb(251, 237, 230);
 $secondary:     #0C0C0C; // $gray-600 !default;
 $third:         #354A5E; // text-color-custom
 $success:       $green !default;
@@ -84,6 +85,7 @@ $white:         $white !default;
 // scss-docs-start theme-colors-map
 $theme-colors: (
   "primary":    $primary,
+  "primary-light": $primary-light,
   "secondary":  $secondary,
   "third":      $third,
   "success":    $success,
@@ -346,7 +348,7 @@ $paragraph-margin-bottom:   1rem !default;
 // scss-docs-start grid-breakpoints
 $grid-breakpoints: (
   xxs: 0,
-  xs: 375,
+  xs: 375px,
   sm: 576px,
   md: 768px,
   lg: 992px,

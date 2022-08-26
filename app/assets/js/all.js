@@ -168,4 +168,13 @@ $(document).ready(function () {
     $(".exp-3").removeClass("d-none");
     $(".exp-1, .exp-2").addClass("d-none");
   });
+
+  // ---------------------- masonry ---------------------- 
+  $('.grid').masonry({
+    // options...
+    itemSelector: '.grid-item',
+    columnWidth: 20,
+  });
+
 });
+

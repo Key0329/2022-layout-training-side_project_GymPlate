@@ -2,6 +2,7 @@ main {
     margin-top: 88px;
 }
 
+// banner
 .gymList-banner {
     position: relative;
     background-image: url(../images/sam-moghadam-khamseh-vOZP2LojrHI-unsplash.jpg);
@@ -27,7 +28,93 @@ main {
 }
 
 .input-group {
-    .gymList-search-text{
+    .gymList-search-text {
         flex: 4;
     }
 }
+
+// area masonry
+.grid-item {
+    width: 100%;
+    @include pad{
+        width: 48%;
+    }
+    @include pc{
+        width: 23%;
+    }
+    height: 160px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+    &:hover{
+        opacity: 0.7;
+    }
+    &-TaipeiCity {
+        background-image: url(../images/lisanto-ecbw59DdC0E-unsplash.jpg);
+        background-position: center right;
+    }
+    &-NewTaipeiCity {
+        background-image: url(../images/lisanto-mKuJwcZvvJY-unsplash.jpg);
+    }
+    &-TaiChungCity {
+        background-image: url(../images/lisanto-Ur5BUvn-fZA-unsplash.jpg);
+    }
+    &-KaohsiungCity {
+        background-image: url(../images/remi-thorel-md37aLkm7Ys-unsplash.jpg);
+    }
+    &-gym01{
+        background-image: url(../images/masonry01.jpg);
+    }
+    &-gym02{
+        background-image: url(../images/masonry02.jpg);
+    }
+    &-gym03{
+        background-image: url(../images/masonry03.jpg);
+    }
+    &-gym04{
+        background-image: url(../images/masonry04.jpg);
+    }
+    &-gym05{
+        background-image: url(../images/masonry05.jpg);
+    }
+    &-gym06{
+        background-image: url(../images/masonry06.jpg);
+    }
+    &-gym07{
+        background-image: url(../images/masonry07.jpg);
+    }
+    &-gym08{
+        background-image: url(../images/masonry08.jpg);
+    }
+    &-gym09{
+        background-image: url(../images/masonry09.jpg);
+    }
+    &-gym10{
+        background-image: url(../images/masonry10.jpg);
+    }
+    &-gym11{
+        background-image: url(../images/masonry11.jpg);
+    }
+    &-gym12{
+        background-image: url(../images/masonry12.jpg);
+    }
+    &-gym13{
+        background-image: url(../images/masonry13.jpg);
+    }
+    &-gym14{
+        background-image: url(../images/masonry14.jpg);
+    }
+    &-gym15{
+        background-image: url(../images/masonry15.jpg);
+    }
+    &-gym16{
+        background-image: url(../images/masonry16.jpg);
+    }
+    &-gym17{
+        background-image: url(../images/masonry17.jpg);
+    }
+}
+
+.grid-item--height2 { height: 240px; }
+.grid-item--height3 { height: 320px; }
