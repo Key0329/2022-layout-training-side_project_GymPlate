@@ -1,0 +1,46 @@
+// banner
+.gymArea-banner {
+    position: relative;
+    background-image: url(../images/gymArea-banner.jpg);
+    background-size: cover;
+    background-position: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+        z-index: 0;
+    }
+
+    h1 {
+        position: relative;
+        z-index: 1;
+    }
+
+}
+
+.input-group {
+    .gymList-search-text {
+        flex: 4;
+    }
+}
+
+// area
+.gymArea{
+    &-sub{
+        bottom: 24px;
+        left: 210px;
+    }
+    .card{
+        img{
+            height: auto;
+            @include pad{
+                height: 200px;
+            }
+        }
+    }
+}

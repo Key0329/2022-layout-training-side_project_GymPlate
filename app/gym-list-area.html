@@ -1,0 +1,988 @@
+---
+title: Gym Plate - gym list area - Taipei City
+layout: ./app/layout.ejs
+engine: ejs
+current: gym-list-area
+---
+
+<main class="bg-gray">
+
+    <!-- gymArea banner -->
+    <section class="gymArea-banner pt-60 pb-40">
+        <h1 class="text-white text-center fs-4 fs-sm-1 fw-bold mb-4">找到您與客戶的最佳場地</h1>
+        <div class="container">
+            <div class="row justify-content-center">
+                <form class="col-md-8">
+                    <div class="input-group">
+                        <input type="text" class="form-control gymList-search-text">
+                        <select class="form-select gymList-search-select d-none d-sm-block">
+                            <option value="Taipei City" selected>台北市</option>
+                            <option value="New Taipei City">新北市</option>
+                            <option value="Taichung City">台中市</option>
+                            <option value="Kaohsiung City">高雄市</option>
+                        </select>
+                        <button type="button" class="btn btn-white dropdown-toggle dropdown-toggle-split d-sm-none"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">台北市</a></li>
+                            <li><a class="dropdown-item" href="#">新北市</a></li>
+                            <li><a class="dropdown-item" href="#">台中市</a></li>
+                            <li><a class="dropdown-item" href="#">高雄市</a></li>
+                        </ul>
+                        <button class="btn btn-primary text-white" type="button">搜尋</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 py-lg-40">
+        <div class="container-fluid px-md-8 px-lg-24">
+            <div class="row g-5 g-lg-20">
+
+                <!-- aside -->
+                <div class="col-lg-3">
+                    <aside class="sticky-top mb-20 mb-lg-0">
+                        <div class="accordion">
+                            <!-- Taipei City -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button py-2" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#gymList-collapse-taipeiCity" aria-expanded="true"
+                                        aria-controls="gymList-collapse-taipeiCity">
+                                        台北市
+                                    </button>
+                                </h2>
+                                <div id="gymList-collapse-taipeiCity" class="accordion-collapse collapse show"
+                                    aria-labelledby="gymList-heading-taipeiCity">
+                                    <div class="accordion-body">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center border-bottom mb-2">
+                                            <label class="list-group-item text-center border-0 py-1 px-0">
+                                                <input class="form-check-input me-1" type="checkbox" value="">
+                                                全選
+                                            </label>
+                                            <a href="#" class="btn btn-primary-light text-primary mb-2">搜尋</a>
+                                        </div>
+                                        <ul class="list-group list-unstyled">
+                                            <div class="row">
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        中正區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        大同區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        中山區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        松山區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        大安區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        萬華區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        信義區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        士林區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        北投區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        內湖區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        南港區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        文山區
+                                                    </label>
+                                                </li>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- New Taipei City -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button py-2" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#gymList-collapse-newTaipeiCity" aria-expanded="true"
+                                        aria-controls="gymList-collapse-newTaipeiCity">
+                                        新北市
+                                    </button>
+                                </h2>
+                                <div id="gymList-collapse-newTaipeiCity" class="accordion-collapse collapse"
+                                    aria-labelledby="gymList-heading-newTaipeiCity">
+                                    <div class="accordion-body">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center border-bottom mb-2">
+                                            <label class="list-group-item text-center border-0 py-1 px-0">
+                                                <input class="form-check-input me-1" type="checkbox" value="">
+                                                全選
+                                            </label>
+                                            <a href="#" class="btn btn-primary-light text-primary mb-2">搜尋</a>
+                                        </div>
+                                        <ul class="list-group list-unstyled">
+                                            <div class="row">
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        板橋區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        三重區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        中和區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        永和區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        新莊區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        新店區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        土城區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        蘆洲區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        樹林區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        鶯歌區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        三峽區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        淡水區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        汐止區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        瑞芳區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        五股區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        泰山區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        林口區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        八里區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        深坑區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        石碇區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        坪林區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        三芝區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        石門區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        金山區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        萬里區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        平溪區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        雙溪區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        貢寮區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        烏來區
+                                                    </label>
+                                                </li>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- TaiChung City -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button py-2" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#gymList-collapse-TaiChung" aria-expanded="true"
+                                        aria-controls="gymList-collapse-TaiChung">
+                                        台中市
+                                    </button>
+                                </h2>
+                                <div id="gymList-collapse-TaiChung" class="accordion-collapse collapse"
+                                    aria-labelledby="gymList-heading-TaiChung">
+                                    <div class="accordion-body">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center border-bottom mb-2">
+                                            <label class="list-group-item text-center border-0 py-1 px-0">
+                                                <input class="form-check-input me-1" type="checkbox" value="">
+                                                全選
+                                            </label>
+                                            <a href="#" class="btn btn-primary-light text-primary mb-2">搜尋</a>
+                                        </div>
+                                        <ul class="list-group list-unstyled">
+                                            <div class="row">
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        中區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        東區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        西區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        南區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        北區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        西屯區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        南屯區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        北屯區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        豐原區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        大里區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        太平區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        清水區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        沙鹿區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        大甲區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        東勢區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        梧棲區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        烏日區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        神岡區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        大肚區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        大雅區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        后里區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        霧峰區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        潭子區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        龍井區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        外埔區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        和平區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        石岡區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        大安區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        新社區
+                                                    </label>
+                                                </li>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Kaohsiung City -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button py-2" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#gymList-collapse-Kaohsiung" aria-expanded="true"
+                                        aria-controls="gymList-collapse-Kaohsiung">
+                                        高雄市
+                                    </button>
+                                </h2>
+                                <div id="gymList-collapse-Kaohsiung" class="accordion-collapse collapse"
+                                    aria-labelledby="gymList-heading-Kaohsiung">
+                                    <div class="accordion-body">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center border-bottom mb-2">
+                                            <label class="list-group-item text-center border-0 py-1 px-0">
+                                                <input class="form-check-input me-1" type="checkbox" value="">
+                                                全選
+                                            </label>
+                                            <a href="#" class="btn btn-primary-light text-primary mb-2">搜尋</a>
+                                        </div>
+                                        <ul class="list-group list-unstyled">
+                                            <div class="row">
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        楠梓區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        左營區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        鼓山區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        鹽埕區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        三民區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        前金區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        新興區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        苓雅區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        前鎮區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        小港區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        旗津區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        鳳山區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        烏松區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        仁武區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        大社區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        大樹區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        大寮區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        林園區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        岡山區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        橋頭區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        路竹區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        燕巢區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        阿蓮區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        田寮區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        梓官區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        彌陀區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        永安區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        湖內區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        茄萣區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        旗山區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        美濃區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        內門區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        杉林區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        甲仙區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        六龜區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        桃源區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        茂林區
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        太平島
+                                                    </label>
+                                                </li>
+                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        中洲礁
+                                                    </label>
+                                                </li>
+                                                <li class="col-xs-4 col-md-4 col-lg-12">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        那瑪夏區
+                                                    </label>
+                                                </li>
+                                                <li class="col-xs-4 col-md-3 col-lg-12">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        東沙群島
+                                                    </label>
+                                                </li>
+                                                <li class="col-xs-4 col-md-3 col-lg-12">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        南沙群島
+                                                    </label>
+                                                </li>
+                                                <li class="col-xs-12 col-md-3 col-lg-12">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        山地原住民區
+                                                    </label>
+                                                </li>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+
+                <!-- area -->
+                <div class="gymArea col-lg-9">
+                    <div
+                        class="text-center text-lg-start text-primary border-bottom border-gray-c pb-2 pb-lg-6 mb-10 position-relative">
+                        <h2 class="fw-bold display-3 mb-0">台北市</h2>
+                        <span class="gymArea-sub fw-bold position-lg-absolute mb-0 fs-2">北投區 (12)</span>
+                    </div>
+                    <div class="card-group flex-column">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./assets/images/craig-lovelidge-yDGsn39fbD4-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body d-flex flex-column h-100">
+                                        <h5 class="card-title">Fitness Formula<br>專屬健議
+                                            </h5>
+                                        <p class="card-text">位於明德路上的健身工作室，捷運走路約5分鐘可抵達，場地明亮乾淨</p>
+                                        <p class="card-text mt-auto ms-auto"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./assets/images/craig-lovelidge-COxd0Jbe7u8-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./assets/images/craig-lovelidge-yDGsn39fbD4-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./assets/images/craig-lovelidge-COxd0Jbe7u8-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./assets/images/craig-lovelidge-yDGsn39fbD4-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./assets/images/craig-lovelidge-COxd0Jbe7u8-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./assets/images/craig-lovelidge-yDGsn39fbD4-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./assets/images/craig-lovelidge-COxd0Jbe7u8-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>

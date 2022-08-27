@@ -33,6 +33,11 @@ main {
     }
 }
 
+// aside
+.sticky-top{
+    top: 128px;
+}
+
 // area masonry
 .grid-item {
     width: 100%;
@@ -50,6 +55,10 @@ main {
     &:hover{
         opacity: 0.7;
     }
+
+    &--height2 { height: 240px; }
+    &--height3 { height: 320px; }
+
     &-TaipeiCity {
         background-image: url(../images/lisanto-ecbw59DdC0E-unsplash.jpg);
         background-position: center right;
@@ -115,6 +124,3 @@ main {
         background-image: url(../images/masonry17.jpg);
     }
 }
-
-.grid-item--height2 { height: 240px; }
-.grid-item--height3 { height: 320px; }
