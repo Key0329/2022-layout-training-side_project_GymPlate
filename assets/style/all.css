@@ -27282,6 +27282,10 @@ main {
           flex: 4;
 }
 
+.sticky-top {
+  top: 128px;
+}
+
 .grid-item {
   width: 100%;
   height: 160px;
@@ -27305,6 +27309,14 @@ main {
 
 .grid-item:hover {
   opacity: 0.7;
+}
+
+.grid-item--height2 {
+  height: 240px;
+}
+
+.grid-item--height3 {
+  height: 320px;
 }
 
 .grid-item-TaipeiCity {
@@ -27392,12 +27404,50 @@ main {
   background-image: url(../images/masonry17.jpg);
 }
 
-.grid-item--height2 {
-  height: 240px;
+.gymArea-banner {
+  position: relative;
+  background-image: url(../images/gymArea-banner.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
-.grid-item--height3 {
-  height: 320px;
+.gymArea-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0)));
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  z-index: 0;
+}
+
+.gymArea-banner h1, .gymArea-banner .h1 {
+  position: relative;
+  z-index: 1;
+}
+
+.input-group .gymList-search-text {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
+.gymArea-sub {
+  bottom: 24px;
+  left: 210px;
+}
+
+.gymArea .card img {
+  height: auto;
+}
+
+@media (min-width: 767px) {
+  .gymArea .card img {
+    height: 200px;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */

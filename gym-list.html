@@ -58,10 +58,10 @@
         <a class="nav-link text-white hover-text-primary hover-bg-white py-3" aria-current="page" href="./index.html">首頁</a>
       </li>
       <li class="nav-item text-center">
-        <a class="nav-link text-white hover-text-primary hover-bg-white py-3" href="./class.html">場地列表</a>
+        <a class="nav-link text-white hover-text-primary hover-bg-white py-3" href="./gym-list.html">場地列表</a>
       </li>
       <li class="nav-item text-center">
-        <a class="nav-link text-white hover-text-primary hover-bg-white py-3" href="./class.html">看板分類</a>
+        <a class="nav-link text-white hover-text-primary hover-bg-white py-3" href="./gym-list.html">看板分類</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-white hover-text-primary hover-bg-white d-flex py-3" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
@@ -109,12 +109,12 @@
     </section>
 
     <section class="py-20 py-lg-40">
-        <div class="container">
-            <div class="row">
+        <div class="container-fluid">
+            <div class="row g-8">
 
                 <!-- aside -->
-                <div class="col-lg-3">
-                    <aside class="mb-8 mb-lg-0">
+                <div class="col-lg-3 offset-lg-1">
+                    <aside class="sticky-top mb-20 mb-lg-0">
                         <div class="accordion">
                             <!-- Taipei City -->
                             <div class="accordion-item">
@@ -852,12 +852,6 @@
                                                 <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
                                                     <label class="list-group-item border-0 py-1 px-0">
                                                         <input class="form-check-input me-1" type="checkbox" value="">
-                                                        那瑪夏區
-                                                    </label>
-                                                </li>
-                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
-                                                    <label class="list-group-item border-0 py-1 px-0">
-                                                        <input class="form-check-input me-1" type="checkbox" value="">
                                                         桃源區
                                                     </label>
                                                 </li>
@@ -865,18 +859,6 @@
                                                     <label class="list-group-item border-0 py-1 px-0">
                                                         <input class="form-check-input me-1" type="checkbox" value="">
                                                         茂林區
-                                                    </label>
-                                                </li>
-                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
-                                                    <label class="list-group-item border-0 py-1 px-0">
-                                                        <input class="form-check-input me-1" type="checkbox" value="">
-                                                        東沙群島
-                                                    </label>
-                                                </li>
-                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
-                                                    <label class="list-group-item border-0 py-1 px-0">
-                                                        <input class="form-check-input me-1" type="checkbox" value="">
-                                                        南沙群島
                                                     </label>
                                                 </li>
                                                 <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
@@ -891,7 +873,25 @@
                                                         中洲礁
                                                     </label>
                                                 </li>
-                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
+                                                <li class="col-xs-4 col-md-4 col-lg-12">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        那瑪夏區
+                                                    </label>
+                                                </li>
+                                                <li class="col-xs-4 col-md-3 col-lg-12">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        東沙群島
+                                                    </label>
+                                                </li>
+                                                <li class="col-xs-4 col-md-3 col-lg-12">
+                                                    <label class="list-group-item border-0 py-1 px-0">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        南沙群島
+                                                    </label>
+                                                </li>
+                                                <li class="col-xs-12 col-md-3 col-lg-12">
                                                     <label class="list-group-item border-0 py-1 px-0">
                                                         <input class="form-check-input me-1" type="checkbox" value="">
                                                         山地原住民區
@@ -907,69 +907,69 @@
                 </div>
 
                 <!-- area -->
-                <div class="col-lg-8 offset-lg-1">
+                <div class="col-lg-8">
                     <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 0, "gutter": 10}'>
-                        <a href="#" class="grid-item grid-item-TaipeiCity grid-item--height3 d-flex justify-content-center align-items-center">
+                        <a href="./gym-list-area.html" class="grid-item grid-item-TaipeiCity grid-item--height3 d-flex justify-content-center align-items-center">
                             <h2 class="text-white fw-bold mb-0">台北市</h2>
                         </a>
-                        <a href="#" class="grid-item grid-item-NewTaipeiCity grid-item--height2 d-flex justify-content-center align-items-center">
+                        <a href="./gym-list-area.html" class="grid-item grid-item-NewTaipeiCity grid-item--height2 d-flex justify-content-center align-items-center">
                             <h2 class="text-white fw-bold mb-0">新北市</h2>
                         </a>
-                        <a href="#" class="grid-item grid-item-TaiChungCity grid-item d-flex justify-content-center align-items-center">
+                        <a href="./gym-list-area.html" class="grid-item grid-item-TaiChungCity grid-item d-flex justify-content-center align-items-center">
                             <h2 class="text-white fw-bold mb-0">台中市</h2>
                         </a>
-                        <a href="#" class="grid-item grid-item-KaohsiungCity grid-item--height3 d-flex justify-content-center align-items-center">
+                        <a href="./gym-list-area.html" class="grid-item grid-item-KaohsiungCity grid-item--height3 d-flex justify-content-center align-items-center">
                             <h2 class="text-white fw-bold mb-0">高雄市</h2>
                         </a>
-                        <a href="#" class="grid-item grid-item-gym01 grid-item--height2 d-flex justify-content-center align-items-center">
+                        <a href="./gym-list-area.html" class="grid-item grid-item-gym01 grid-item--height2 d-flex justify-content-center align-items-center">
                             <h2 class="text-white fw-bold mb-0">中山區</h2>
                         </a>
-                        <a href="#" class="grid-item grid-item-gym02 grid-item--height3 d-flex justify-content-center align-items-center">
+                        <a href="./gym-list-area.html" class="grid-item grid-item-gym02 grid-item--height3 d-flex justify-content-center align-items-center">
                             <h2 class="text-white fw-bold mb-0">北投區</h2>
                         </a>
-                        <a href="#" class="grid-item grid-item-gym03 d-flex justify-content-center align-items-center">
+                        <a href="./gym-list-area.html" class="grid-item grid-item-gym03 d-flex justify-content-center align-items-center">
                             <h2 class="text-white fw-bold mb-0">板橋區</h2>
                         </a>
-                        <a href="#" class="grid-item grid-item-gym04 grid-item--height2 d-flex justify-content-center align-items-center">
+                        <a href="./gym-list-area.html" class="grid-item grid-item-gym04 grid-item--height2 d-flex justify-content-center align-items-center">
                             <h2 class="text-white fw-bold mb-0">三民區</h2>
                         </a>
-                        <a href="#" class="grid-item grid-item-gym05 grid-item--height3 d-flex justify-content-center align-items-center">
+                        <a href="./gym-list-area.html" class="grid-item grid-item-gym05 grid-item--height3 d-flex justify-content-center align-items-center">
                             <h2 class="text-white fw-bold mb-0">鳳山區</h2>
                         </a>
-                        <a href="#" class="grid-item grid-item-gym06 grid-item--height2 d-flex justify-content-center align-items-center">
+                        <a href="./gym-list-area.html" class="grid-item grid-item-gym06 grid-item--height2 d-flex justify-content-center align-items-center">
                             <h2 class="text-white fw-bold mb-0">大甲區</h2>
                         </a>
-                        <a href="#" class="grid-item grid-item-gym07 grid-item--height2 d-flex justify-content-center align-items-center">
+                        <a href="./gym-list-area.html" class="grid-item grid-item-gym07 grid-item--height2 d-flex justify-content-center align-items-center">
                             <h2 class="text-white fw-bold mb-0">新店區</h2>
                         </a>
-                        <a href="#" class="grid-item grid-item-gym08 grid-item--height3 d-flex justify-content-center align-items-center">
+                        <a href="./gym-list-area.html" class="grid-item grid-item-gym08 grid-item--height3 d-flex justify-content-center align-items-center">
                             <h2 class="text-white fw-bold mb-0">新莊區</h2>
                         </a>
-                        <a href="#" class="grid-item grid-item-gym09 d-flex justify-content-center align-items-center">
+                        <a href="./gym-list-area.html" class="grid-item grid-item-gym09 d-flex justify-content-center align-items-center">
                             <h2 class="text-white fw-bold mb-0">文山區</h2>
                         </a>
-                        <a href="#" class="grid-item grid-item-gym10 grid-item--height2 d-flex justify-content-center align-items-center">
+                        <a href="./gym-list-area.html" class="grid-item grid-item-gym10 grid-item--height2 d-flex justify-content-center align-items-center">
                             <h2 class="text-white fw-bold mb-0">大安區</h2>
                         </a>
-                        <a href="#" class="grid-item grid-item-gym11 grid-item--height3 d-flex justify-content-center align-items-center">
+                        <a href="./gym-list-area.html" class="grid-item grid-item-gym11 grid-item--height3 d-flex justify-content-center align-items-center">
                             <h2 class="text-white fw-bold mb-0">旗津區</h2>
                         </a>
-                        <a href="#" class="grid-item grid-item-gym12 grid-item--height2 d-flex justify-content-center align-items-center">
+                        <a href="./gym-list-area.html" class="grid-item grid-item-gym12 grid-item--height2 d-flex justify-content-center align-items-center">
                             <h2 class="text-white fw-bold mb-0">左營區</h2>
                         </a>
-                        <a href="#" class="grid-item grid-item-gym13 d-flex justify-content-center align-items-center">
+                        <a href="./gym-list-area.html" class="grid-item grid-item-gym13 d-flex justify-content-center align-items-center">
                             <h2 class="text-white fw-bold mb-0">太平島</h2>
                         </a>
-                        <a href="#" class="grid-item grid-item-gym14 grid-item--height3 d-flex justify-content-center align-items-center">
+                        <a href="./gym-list-area.html" class="grid-item grid-item-gym14 grid-item--height3 d-flex justify-content-center align-items-center">
                             <h2 class="text-white fw-bold mb-0">東沙群島</h2>
                         </a>
-                        <a href="#" class="grid-item grid-item-gym15 grid-item--height2 d-flex justify-content-center align-items-center">
+                        <a href="./gym-list-area.html" class="grid-item grid-item-gym15 grid-item--height2 d-flex justify-content-center align-items-center">
                             <h2 class="text-white fw-bold mb-0">山地原住民區</h2>
                         </a>
-                        <a href="#" class="grid-item grid-item-gym16 grid-item--height2 d-flex justify-content-center align-items-center">
+                        <a href="./gym-list-area.html" class="grid-item grid-item-gym16 grid-item--height2 d-flex justify-content-center align-items-center">
                             <h2 class="text-white fw-bold mb-0">信義區</h2>
                         </a>
-                        <a href="#" class="grid-item grid-item-gym17 grid-item--height2 d-flex justify-content-center align-items-center">
+                        <a href="./gym-list-area.html" class="grid-item grid-item-gym17 grid-item--height2 d-flex justify-content-center align-items-center">
                             <h2 class="text-white fw-bold mb-0">楠梓區</h2>
                         </a>
 
