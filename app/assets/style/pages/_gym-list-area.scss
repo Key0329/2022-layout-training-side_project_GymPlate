@@ -39,8 +39,11 @@
         img{
             height: auto;
             @include pad{
-                height: 200px;
+                height: 300px;
             }
         }
+    }
+    &-icon.active{
+        color: $primary !important;
     }
 }

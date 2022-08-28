@@ -1,0 +1,41 @@
+---
+title: Gym Plate - Fitness Formula
+layout: ./app/layout.ejs
+engine: ejs
+current: gym-detail
+---
+
+<main class="bg-gray">
+
+        <!-- gymDetail banner -->
+        <section class="gymDetail-banner pt-60 pb-40">
+            <h1 class="text-white text-center fs-4 fs-sm-1 fw-bold mb-4">找到您與客戶的最佳場地</h1>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <form class="col-md-8">
+                        <div class="input-group">
+                            <input type="text" class="form-control gymList-search-text">
+                            <select class="form-select gymList-search-select d-none d-sm-block">
+                                <option value="Taipei City" selected>台北市</option>
+                                <option value="New Taipei City">新北市</option>
+                                <option value="Taichung City">台中市</option>
+                                <option value="Kaohsiung City">高雄市</option>
+                            </select>
+                            <button type="button" class="btn btn-white dropdown-toggle dropdown-toggle-split d-sm-none"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">台北市</a></li>
+                                <li><a class="dropdown-item" href="#">新北市</a></li>
+                                <li><a class="dropdown-item" href="#">台中市</a></li>
+                                <li><a class="dropdown-item" href="#">高雄市</a></li>
+                            </ul>
+                            <button class="btn btn-primary text-white" type="button">搜尋</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+</main>

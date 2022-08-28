@@ -4,6 +4,11 @@
         color: $primary !important;
     }
 }
+.hover-text-primary-light{
+    &:hover{
+        color: $primary-light !important;
+    }
+}
 .hover-text-white{
     &:hover{
         color: white !important;
@@ -23,12 +28,17 @@
 }
 .hover-bg-primary{
     &:hover{
-        background-color: $primary;
+        background-color: $primary !important;
     }
 }
 .hover-bg-secondary{
     &:hover{
         background-color: $secondary;
+    }
+}
+.hover-bg-primary-light{
+    &:hover{
+        background-color: $primary-light;
     }
 }
 
