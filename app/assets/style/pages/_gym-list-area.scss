@@ -1,7 +1,7 @@
 // banner
 .gymArea-banner {
     position: relative;
-    background-image: url(../images/gymArea-banner.jpg);
+    background-image: url(../images/timo-volz-phjpsNFw6pM-unsplash.jpg);
     background-size: cover;
     background-position: center;
 
@@ -37,9 +37,9 @@
     }
     .card{
         img{
-            height: auto;
             @include pad{
                 height: 300px;
+                width: 400px;
             }
         }
     }
