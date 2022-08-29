@@ -36,7 +36,8 @@ $grays: (
 // fusv-enable
 
 // scss-docs-start color-variables
-$blue:    #0d6efd !default;
+$blue:    #5390ec !default;
+$blue-light:    #a4c3f3 !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #d63384 !default;
@@ -62,7 +63,8 @@ $colors: (
   "cyan":       $cyan,
   "white":      $white,
   "gray":       $gray-400,
-  "gray-dark":  $gray-800
+  "gray-dark":  $gray-800,
+  "blue-light": $blue-light,
 ) !default;
 // scss-docs-end colors-map
 
@@ -81,6 +83,7 @@ $gray:          $gray-400 !default;
 $gray-custom:   #9B9CA4; // gray-custom
 $white:         $white !default;
 $black:         #000 !default;
+$blue-light:    $blue-light !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -99,6 +102,7 @@ $theme-colors: (
   "gray-c":     $gray-custom,
   "white":      $white,
   "black":      $black,
+  "blue-light": $blue-light,
 ) !default;
 // scss-docs-end theme-colors-map
 

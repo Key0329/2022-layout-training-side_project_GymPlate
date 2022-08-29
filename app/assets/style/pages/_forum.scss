@@ -1,0 +1,49 @@
+.forum__list__group{
+    height: 300px;
+}
+
+.forum__dumbbell{
+    &::after{
+        content: "30kg";
+        position: absolute;
+        width: 30px;
+        height: 320px;
+        background: $dark;
+        top: -10px;
+        left: 50%;
+        border-radius: 50px;
+        z-index: -1;
+        transform: translate(-50%);
+        color: $gray;
+        writing-mode: vertical-lr;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &:hover::after{
+        content: "300kg";
+    }
+}
+
+.forum__index {
+    height: 200px;
+    &__place {
+        background-image: url(../images/sven-mieke-MsCgmHuirDo-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    &__trainer {
+        background-image: url(../images/victor-freitas-nlZTjUZX2qo-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    &__exp {
+        background-image: url(../images/louis-hansel-dsT5LGzEuzE-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.sticky-top-forum{
+    top: 58px;
+}

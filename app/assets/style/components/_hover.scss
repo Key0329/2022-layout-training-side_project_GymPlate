@@ -38,7 +38,7 @@
 }
 .hover-bg-primary-light{
     &:hover{
-        background-color: $primary-light;
+        background-color: $primary-light !important;
     }
 }
 
@@ -46,7 +46,7 @@
 // border
 .hover-border-primary{
     &:hover{
-        border: $primary;
+        border: 5px solid $primary !important;
     }
 }
 
@@ -60,4 +60,14 @@
 // transition speed 
 .transtion-slow{
     transition: all 0.3s;
+}
+
+// 
+.transition-toRight{
+    &:hover{
+        span{
+            margin-left: 16px;
+            transition: 0.3s;
+        }
+    }
 }
