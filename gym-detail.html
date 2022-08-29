@@ -75,38 +75,147 @@
   </div>
 
   
-<main class="bg-gray">
+<main class="text-third">
 
-        <!-- gymDetail banner -->
-        <section class="gymDetail-banner pt-60 pb-40">
-            <h1 class="text-white text-center fs-4 fs-sm-1 fw-bold mb-4">找到您與客戶的最佳場地</h1>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <form class="col-md-8">
-                        <div class="input-group">
-                            <input type="text" class="form-control gymList-search-text">
-                            <select class="form-select gymList-search-select d-none d-sm-block">
-                                <option value="Taipei City" selected>台北市</option>
-                                <option value="New Taipei City">新北市</option>
-                                <option value="Taichung City">台中市</option>
-                                <option value="Kaohsiung City">高雄市</option>
-                            </select>
-                            <button type="button" class="btn btn-white dropdown-toggle dropdown-toggle-split d-sm-none"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="visually-hidden">Toggle Dropdown</span>
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <li><a class="dropdown-item" href="#">台北市</a></li>
-                                <li><a class="dropdown-item" href="#">新北市</a></li>
-                                <li><a class="dropdown-item" href="#">台中市</a></li>
-                                <li><a class="dropdown-item" href="#">高雄市</a></li>
-                            </ul>
-                            <button class="btn btn-primary text-white" type="button">搜尋</button>
+    <!--area banner -->
+    <section class="gymArea-banner pt-60 pb-40 mb-xs-20">
+        <h1 class="text-white text-center fs-4 fs-sm-1 fw-bold mb-4">找到您與客戶的最佳場地</h1>
+        <div class="container">
+            <div class="row justify-content-center">
+                <form class="col-md-8">
+                    <div class="input-group">
+                        <input type="text" class="form-control gymList-search-text">
+                        <select class="form-select gymList-search-select d-none d-sm-block">
+                            <option value="Taipei City" selected>台北市</option>
+                            <option value="New Taipei City">新北市</option>
+                            <option value="Taichung City">台中市</option>
+                            <option value="Kaohsiung City">高雄市</option>
+                        </select>
+                        <button type="button" class="btn btn-white dropdown-toggle dropdown-toggle-split d-sm-none"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">台北市</a></li>
+                            <li><a class="dropdown-item" href="#">新北市</a></li>
+                            <li><a class="dropdown-item" href="#">台中市</a></li>
+                            <li><a class="dropdown-item" href="#">高雄市</a></li>
+                        </ul>
+                        <button class="btn btn-primary text-white" type="button">搜尋</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- swiper -->
+    <section class="gymDetail__banner mb-20">
+        <div class="container-fluid position-relative">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <!-- gymDetail swiper-->
+                    <div class="swiper gymDetail__swiper mb-4 mb-lg-0">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide d-flex justify-content-center align-items-center">
+                                <img src="./assets/images/detail03.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide d-flex justify-content-center align-items-center">
+                                <img src="./assets/images/detail01.png" alt="">
+                            </div>
+                            <div class="swiper-slide d-flex justify-content-center align-items-center"><img
+                                    src="./assets/images/detail05.jpg" alt=""></div>
+                            <div class="swiper-slide d-flex justify-content-center align-items-center"><img
+                                    src="./assets/images/detail02.jpg" alt=""></div>
+                            <div class="swiper-slide d-flex justify-content-center align-items-center"><img
+                                    src="./assets/images/detail04.jpg" alt=""></div>
                         </div>
-                    </form>
+                        <div class="swiper-pagination swiper-pagination-gymDetail"></div>
+                    </div>
+                    <div class="swiper-button-prev gymDetail-swiper-button-prev d-none d-lg-block">
+                        <span class="material-symbols-outlined display-2">chevron_left</span>
+                    </div>
+                    <div class="swiper-button-next gymDetail-swiper-button-next d-none d-lg-block">
+                        <span class="material-symbols-outlined display-2">chevron_right</span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <!-- title -->
+                    <div class="d-flex flex-column align-items-center justify-content-center h-100">
+                        <h1 class="fs-2 fs-lg-1 fw-bold text-center m-4 mb-lg-8">Fitness Formula<br>專屬健議</h1>
+                        <h5 class="fs-7 fs-lg-5 mb-0">
+                            <a href="https://goo.gl/maps/uxs9TAKg3SiQxpbXA">台北市北投區明德路11號<span
+                                    class="material-symbols-outlined align-middle">pin_drop</span></a>
+                        </h5>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+
+    <section class="bg-gray py-12 py-lg-24">
+        <div class="container d-flex flex-column align-items-center">
+            <h2 class="fw-bold mb-4 mb-lg-8">簡介</h2>
+            <p class="fs-7 fs-lg-5 mb-0">位於明德路上的健身工作室，捷運走路約5分鐘可抵達，場地明亮乾淨<br>老闆是PTT肌肉海灘版的版主，專業又帥氣</p>
+        </div>
+    </section>
+
+    <section class="py-12 py-lg-24">
+        <div class="container d-flex flex-column align-items-center">
+            <h2 class="fw-bold mb-4 mb-lg-8">場地設施</h2>
+            <ul class="list-unstyled d-sm-flex gap-10">
+                <li class="d-flex align-items-center">
+                    <span class="material-symbols-outlined gymArea-icon me-1 active fs-2">bathtub</span>
+                    <p class="fs-4 mb-0">淋浴間</p>
+                </li>
+                <li class="d-flex align-items-center">
+                    <span class="material-symbols-outlined gymArea-icon me-1 active fs-2">monitor_weight</span>
+                    <p class="fs-4 mb-0">InBody ( 體脂計 )</p>
+                </li>
+                <li class="d-flex align-items-center">
+                    <span class="material-symbols-outlined gymArea-icon me-1 active fs-2">local_drink</span>
+                    <p class="fs-4 mb-0">飲水機</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="bg-gray py-12 py-lg-24">
+        <div class="container d-flex flex-column align-items-center">
+            <h2 class="fw-bold mb-4 mb-lg-8">器材</h2>
+            <p class="fs-7 fs-lg-5 mb-0">Cable、蹲舉架x4、壺鈴、戰繩、藥球、地雷管、雪橇、BOSU、TRX、跳箱、跳繩、彈力帶、划船機、風車機</p>
+        </div>
+    </section>
+
+    <section class="py-12 py-lg-24">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-4 mb-md-16">場地資訊</h2>
+            <div class="d-lg-flex justify-content-between align-items-center">
+                <div class="d-flex flex-column align-items-center align-items-lg-start mb-4 mb-lg-8 mb-lg-0">
+                    <p class="fs-7 fs-lg-5 mb-0">租借費用： 300 元 / 75 分鐘（ 包含緩衝時間 ）</p>
+                    <p class="fs-7 fs-lg-5 mb-0">營業時間： 9 : 00 ~ 22 : 00</p>
+                    <a class="fs-7 fs-lg-5 hover-text-primary-light transtion-slow" href="tel:0229886666">電話：（ 02 ）2988 - 6666</a>
+                    <a class="fs-7 fs-lg-5 hover-text-primary-light transtion-slow" href="mailto:xxxx666666@gmail.com">信箱： xxxx666666@gmail.com</a>
+                    <a href="#" class="text-center hover-text-primary-light transtion-slow mb-0">
+                        <span class="material-symbols-outlined display-1">qr_code_2</span>
+                    </a>
+                    <ul class="list-unstyled d-flex justify-content-center gap-10 mb-0">
+                        <li>
+                            <a class="fs-2 hover-text-primary-light transtion-slow" href="#" title="facebook" ><i class="bi bi-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a class="fs-2 hover-text-primary-light transtion-slow" href="#" title="instagram" ><i class="bi bi-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a class="fs-2 hover-text-primary-light transtion-slow" href="#" title="line" ><i class="bi bi-line"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-none d-md-flex justify-content-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.8510696058643!2d121.51488205092889!3d25.106902283859515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ae8e85c95bf3%3A0x62991dca76e8653e!2z5bCI5bGs5YGl6K2wRml0bmVzcyBGb3JtdWxhICjlgaXouqvmlZnlrqQp!5e0!3m2!1szh-TW!2stw!4v1661760379174!5m2!1szh-TW!2stw" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </main>
 
@@ -119,10 +228,10 @@
           <!-- footer nav -->
           <ul class="nav nav-pills mb-4 flex-column flex-md-row align-items-center">
             <li class="nav-item">
-              <a class="nav-link text-white hover-text-primary ps-lg-0" href="#">首頁</a>
+              <a class="nav-link text-white hover-text-primary ps-lg-0" href="./index.html">首頁</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-white hover-text-primary" href="#">場地列表</a>
+              <a class="nav-link link-white hover-text-primary" href="./gym-list.html">場地列表</a>
             </li>
             <li class="nav-item">
               <a class="nav-link link-white hover-text-primary" href="#">教練討論區</a>

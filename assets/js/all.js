@@ -69,6 +69,20 @@ $(document).ready(function () {
         spaceBetween: 40
       }
     }
+  }); // swiper detail
+
+  var gymDetail__swiper = new Swiper(".gymDetail__swiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      renderBullet: function renderBullet(index, className) {
+        return '<span class="' + className + '">' + (index + 1) + "</span>";
+      }
+    }
   }); // ---------------------- AOS ---------------------- 
   // AOS
 
@@ -173,6 +187,10 @@ $(document).ready(function () {
     // options...
     itemSelector: '.grid-item',
     columnWidth: 20
+  }); // 確保圖片都載入後，以免造成剛進入頁面時圖片會被覆蓋
+
+  $('.row').imagesLoaded().progress(function () {
+    $('.row').masonry(); // 渲染整體畫面
   });
 });
 //# sourceMappingURL=all.js.map
