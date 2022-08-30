@@ -19,6 +19,21 @@
         color: $secondary !important;
     }
 }
+.hover-text-danger{
+    &:hover{
+        color: $danger !important;
+    }
+}
+.hover-text-warning{
+    &:hover{
+        color: $warning !important;
+    }
+}
+.hover-text-blue{
+    &:hover{
+        color: $blue !important;
+    }
+}
 
 // background
 .hover-bg-white{
@@ -41,7 +56,11 @@
         background-color: $primary-light !important;
     }
 }
-
+.hover-bg-danger{
+    &:hover{
+        background-color: $danger !important;
+    }
+}
 
 // border
 .hover-border-primary{

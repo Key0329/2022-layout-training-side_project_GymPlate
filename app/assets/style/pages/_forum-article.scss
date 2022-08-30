@@ -1,17 +1,30 @@
-.forum__article{
-    &__banner{
+.forum__article {
+    &__banner {
         background-image: url(../images/marvin-meyer-SYTO3xs06fU-unsplash.jpg);
         background-size: cover;
         background-position: center;
         height: 200px;
     }
-    &__ad{
+
+    &__ad {
         height: 50px;
     }
-    &__content{
-        &__img{
+
+    &__content {
+        &__img {
             width: 100px;
             height: 100px;
         }
     }
+
+    &__modal {
+        &__img{
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
+
+.sticky-top-article-modal{
+    top: 20px;
 }
