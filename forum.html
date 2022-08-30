@@ -52,7 +52,7 @@
   </header>
 
   <!-- Ham Menu -->
-  <div class="collapse bg-secondary-opacity d-lg-none fixed-top" style="top:88px" id="collapseHamMenu">
+  <div class="collapse bg-secondary-opacity d-lg-none fixed-top" style="top:56px" id="collapseHamMenu">
     <ul class="nav flex-column py-3">
       <li class="nav-item text-center">
         <a class="nav-link text-white hover-text-primary hover-bg-white py-3" aria-current="page" href="./index.html">首頁</a>
@@ -76,35 +76,38 @@
 
   
 <main>
-
-    <nav class="forum-navbar navbar navbar-expand-lg navbar-light bg-primary sticky-top sticky-top-forum">
+    <!-- search nav -->
+    <nav
+        class="forum-navbar navbar navbar-expand-lg navbar-light bg-primary sticky-top sticky-top-forum d-none d-block">
         <div class="container">
-            <form class="d-flex w-50 ms-auto">
+            <form class="d-flex w-100 w-lg-50 ms-auto">
                 <div class="input-group">
-                    <input class="form-control" type="search" placeholder="健身" aria-label="Search">
-                    <button class="btn btn-outline-dark" type="submit">Search</button>
+                    <input class="form-control fs-7 py-0" type="search" placeholder="健身" aria-label="Search">
+                    <button class="btn btn-outline-dark py-0" type="submit"><i
+                            class="bi bi-search fs-7 align-middle"></i></button>
                 </div>
             </form>
         </div>
     </nav>
 
-    <section class="py-40">
+    <section class="py-20 py-lg-40">
         <div class="container-fluid">
             <div class="row justify-content-center">
 
+                <!-- left aside dumbbell -->
                 <div class="col-lg-3">
-                    <aside class="sticky-top">
+                    <aside class="sticky-top d-none d-lg-block">
                         <ul class="list-group forum__list__group list-unstyled justify-content-between sticky-top">
                             <div class="forum__dumbbell position-relative">
                                 <li class="list-group-item border-0 bg-transparent d-flex justify-content-center p-0">
                                     <a class="fs-6 text-center text-white bg-dark rounded py-1 w-50 d-flex align-items-center justify-content-center border transition-toRight"
-                                        href="#">所有看板
+                                        href="./forum-article.html">所有看板
                                         <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
                                     </a>
                                 </li>
                                 <li class="list-group-item border-0 bg-transparent d-flex justify-content-center p-0">
                                     <a class="fs-6 text-center text-white bg-dark rounded py-1 w-50 d-flex align-items-center justify-content-center border transition-toRight"
-                                        href="#">場地分享
+                                        href="./forum-article.html">場地分享
                                         <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
                                     </a>
                                 </li>
@@ -112,13 +115,13 @@
                             <div>
                                 <li class="list-group-item border-0 bg-transparent d-flex justify-content-center p-0">
                                     <a class="fs-6 text-center text-white bg-dark rounded py-1 w-50 d-flex align-items-center justify-content-center border transition-toRight"
-                                        href="#">教練推薦
+                                        href="./forum-article.html">教練推薦
                                         <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
                                     </a>
                                 </li>
                                 <li class="list-group-item border-0 bg-transparent d-flex justify-content-center p-0">
                                     <a class="fs-6 text-center text-white bg-dark rounded py-1 w-50 d-flex align-items-center justify-content-center border transition-toRight"
-                                        href="#">訓練心得
+                                        href="./forum-article.html">訓練心得
                                         <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
                                     </a>
                                 </li>
@@ -127,31 +130,33 @@
                     </aside>
                 </div>
 
+                <!-- forum index -->
                 <div class="col-lg-6">
                     <ul class="list-unstyled">
                         <li>
-                            <a class="forum__index forum__index__place bg-white rounded-pill d-flex justify-content-center align-items-center position-relative border border-5 border-white hover-border-primary mb-16"
-                                href="#">
+                            <a class="forum__index forum__index__place bg-white rounded-pill d-flex justify-content-center align-items-center position-relative border border-5 border-white hover-border-primary mb-8 mb-lg-16"
+                                href="./forum-article.html">
                                 <h2 class="fs-1 text-white opacity-70 mb-0">場地分享</h2>
                             </a>
                         </li>
                         <li>
-                            <a class="forum__index forum__index__trainer bg-white rounded-pill d-flex justify-content-center align-items-center position-relative border border-5 border-white hover-border-primary mb-16"
-                                href="#">
+                            <a class="forum__index forum__index__trainer bg-white rounded-pill d-flex justify-content-center align-items-center position-relative border border-5 border-white hover-border-primary mb-8 mb-lg-16"
+                                href="./forum-article.html">
                                 <h2 class="fs-1 text-white opacity-70 mb-0">教練推薦</h2>
                             </a>
                         </li>
                         <li>
                             <a class="forum__index forum__index__exp bg-white rounded-pill d-flex justify-content-center align-items-center position-relative border border-5 border-white hover-border-primary"
-                                href="#">
+                                href="./forum-article.html">
                                 <h2 class="fs-1 text-white opacity-70 mb-0">訓練心得</h2>
                             </a>
                         </li>
                     </ul>
                 </div>
 
+                <!-- right aside hot -->
                 <div class="col-lg-3">
-                    <aside class="sticky-top d-flex flex-column align-items-center">
+                    <aside class="sticky-top d-none d-lg-flex flex-column align-items-center">
                         <a class="fs-5 text-center text-third rounded hover-text-primary mb-4" href="#"><i
                                 class="bi bi-fire"></i>熱門文章</a>
                         <ul class="list-group list-group-flush list-group-numbered align-items-start w-50">
@@ -163,6 +168,41 @@
                         </ul>
                     </aside>
                 </div>
+
+                <!-- mobile bottom nav -->
+                <nav class="bg-secondary fixed-bottom d-lg-none px-0">
+                    <div class="collapse" id="navbarToggleExternalContent">
+                        <form class="d-flex w-100 w-lg-50 ms-auto">
+                            <div class="input-group">
+                                <input class="form-control fs-7 rounded-0 py-0" type="search" placeholder="健身" aria-label="Search">
+                                <button class="btn btn-primary rounded-0 py-0" type="submit"><i
+                                        class="bi bi-search fs-7 align-middle"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav nav-pills justify-content-center align-items-center gap-sm-6">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./forum.html">
+                                <span class="material-symbols-outlined align-middle">home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./forum-article.html">
+                                <span class="material-symbols-outlined align-middle">border_all</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="material-symbols-outlined align-middle">notifications</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-toggler" href="#" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="material-symbols-outlined align-middle">search</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
 
             </div>
         </div>

@@ -27256,6 +27256,18 @@ body {
   transition: 0.3s;
 }
 
+.focus-none:focus {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.focus-none:active {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .deco-border--header-nav::before {
   content: "";
   position: absolute;
@@ -27927,7 +27939,23 @@ main {
 }
 
 .sticky-top-forum {
-  top: 58px;
+  top: 56px;
+}
+
+.forum__article__banner {
+  background-image: url(../images/marvin-meyer-SYTO3xs06fU-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+}
+
+.forum__article__ad {
+  height: 50px;
+}
+
+.forum__article__content__img {
+  width: 100px;
+  height: 100px;
 }
 
 /*# sourceMappingURL=all.css.map */
