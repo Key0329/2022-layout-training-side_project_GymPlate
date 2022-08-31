@@ -10366,6 +10366,10 @@ fieldset:disabled .btn {
   top: 0 !important;
 }
 
+.top-25 {
+  top: 25% !important;
+}
+
 .top-50 {
   top: 50% !important;
 }
@@ -10376,6 +10380,10 @@ fieldset:disabled .btn {
 
 .bottom-0 {
   bottom: 0 !important;
+}
+
+.bottom-25 {
+  bottom: 25% !important;
 }
 
 .bottom-50 {
@@ -10390,6 +10398,10 @@ fieldset:disabled .btn {
   left: 0 !important;
 }
 
+.start-25 {
+  left: 25% !important;
+}
+
 .start-50 {
   left: 50% !important;
 }
@@ -10400,6 +10412,10 @@ fieldset:disabled .btn {
 
 .end-0 {
   right: 0 !important;
+}
+
+.end-25 {
+  right: 25% !important;
 }
 
 .end-50 {
@@ -28192,6 +28208,20 @@ main {
   background-image: url(../images/anastase-maragos-4dlhin0ghOk-unsplash.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.member__info__menu::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background: #ced4da;
+  right: 0;
+}
+
+.member__info__img {
+  width: 200px;
+  height: 200px;
 }
 
 /*# sourceMappingURL=all.css.map */
