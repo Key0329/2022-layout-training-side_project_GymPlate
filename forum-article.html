@@ -12,9 +12,11 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,200" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
@@ -24,7 +26,7 @@
   <header class="bg-secondary fixed-top letter-space-1 bg-secondary py-2 px-6">
     <div class="container-fluid d-flex justify-content-between align-items-center">
       <!-- header logo -->
-      <h2><a class="fw-bold lh-1" href="#">Gym Plate</a></h2>
+      <h2><a class="fw-bold lh-1" href="./index.html">Gym Plate</a></h2>
       <!-- header nav -->
       <nav class="d-none d-lg-block">
         <ul class="nav nav-pills">
@@ -37,15 +39,38 @@
           <li class="nav-item">
             <a class="btn btn-outline-white rounded-pill fs-7 py-2 px-8 ms-8" href="./forum.html">看板分類</a>
           </li>
-          <li class="nav-item">
-            <a class="btn btn-outline-white rounded-pill fs-7 d-flex align-items-center position-relative deco-border--header-nav py-2 px-8 ms-20" href="#"><i class="material-icons-round align-middle me-1 ms-auto">
-              account_circle
-            </i><p class="mb-0">登入</p></a>
+          <!-- not member -->
+          <li class="nav-item" id="index__login__button">
+            <a class="btn btn-outline-white rounded-pill fs-7 d-flex align-items-center position-relative deco-border--header-nav py-2 px-8 ms-20"
+              href="./member-login.html"><i class="material-icons-round align-middle me-1 ms-auto">
+                account_circle
+              </i>
+              <p class="mb-0">登入</p>
+            </a>
           </li>
+
+          <!-- member -->
+          <li class="nav-item d-none" id="index__login__status">
+            <div class="dropdown">
+              <a class="btn btn-outline-white rounded-pill fs-7 d-flex align-items-center position-relative deco-border--header-nav py-2 px-8 ms-20 dropdown-toggle"
+                href="#" role="button" id="index__login__status__dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="material-icons-round align-middle me-1 ms-auto">
+                  account_circle
+                </i>
+                <p class="mb-0">雷神索爾</p>
+              </a>
+              <ul class="dropdown-menu text-center" aria-labelledby="index__login__status__dropdown">
+                <li><a class="dropdown-item" href="#">個人資訊</a></li>
+                <li><a class="dropdown-item" href="#">場地刊登</a></li>
+              </ul>
+            </div>
+          </li>
+
         </ul>
       </nav>
       <!-- Ham -->
-      <a class="d-lg-none text-white fs-2" data-bs-toggle="collapse" href="#collapseHamMenu" role="button" style="height: 40px;">
+      <a class="d-lg-none text-white fs-2" data-bs-toggle="collapse" href="#collapseHamMenu" role="button"
+        style="height: 40px;">
         <i class="bi bi-list"></i>
       </a>
     </div>
@@ -55,7 +80,8 @@
   <div class="collapse bg-secondary-opacity d-lg-none fixed-top" style="top:56px" id="collapseHamMenu">
     <ul class="nav flex-column py-3">
       <li class="nav-item text-center">
-        <a class="nav-link text-white hover-text-primary hover-bg-white py-3" aria-current="page" href="./index.html">首頁</a>
+        <a class="nav-link text-white hover-text-primary hover-bg-white py-3" aria-current="page"
+          href="./index.html">首頁</a>
       </li>
       <li class="nav-item text-center">
         <a class="nav-link text-white hover-text-primary hover-bg-white py-3" href="./gym-list.html">場地列表</a>
@@ -64,7 +90,8 @@
         <a class="nav-link text-white hover-text-primary hover-bg-white py-3" href="./forum.html">看板分類</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white hover-text-primary hover-bg-white d-flex py-3" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+        <a class="nav-link text-white hover-text-primary hover-bg-white d-flex py-3" href="./member-login.html"
+          data-bs-toggle="modal" data-bs-target="#loginModal">
           <i class="material-icons-round align-middle me-1 ms-auto">
             account_circle
           </i>
@@ -129,15 +156,15 @@
                                     <span class="material-symbols-outlined align-middle">border_all</span>
                                     所有看板
                                 </a>
-                                <ul class="navbar-nav">
+                                <ul class="navbar-nav flex-sm-row">
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">熱門</a>
+                                        <a class="nav-link px-2 active" aria-current="page" href="#">熱門</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">最新</a>
+                                        <a class="nav-link px-2" href="#">最新</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">規則</a>
+                                        <a class="nav-link px-2" href="#">規則</a>
                                     </li>
                                 </ul>
                             </div>
@@ -356,7 +383,7 @@
 
                             <!-- body -->
                             <div class="modal-body text-secondary pt-10 pb-40">
-                                <div class="container">
+                                <div class="container px-0">
                                     <!-- content -->
                                     <h2 class="fw-bold text-secondary">這場地不允許我拿槌子進去</h2>
                                     <time>8 月 30 日 5:20 分</time>
@@ -371,12 +398,15 @@
                                     <img class="mb-20" src="./assets/images/ajith-s-eG8mqQEkg4Q-unsplash.jpg"
                                         alt="modal-body-img03">
                                     <!-- hash tag -->
-                                    <div class="d-flex gap-4 mb-8">
-                                        <a href="#" class="btn btn-primary-light text-primary rounded-pill">#好基友</a>
-                                        <a href="#" class="btn btn-primary-light text-primary rounded-pill">#大肌肌</a>
-                                        <a href="#" class="btn btn-primary-light text-primary rounded-pill">#又要找下一間</a>
+                                    <div class="d-flex gap-4 mb-8 flex-wrap">
                                         <a href="#"
-                                            class="btn btn-primary-light text-primary rounded-pill">#爛場地(物理上)</a>
+                                            class="btn btn-primary-light text-primary fs-7 fs-lg-6 rounded-pill">#好基友</a>
+                                        <a href="#"
+                                            class="btn btn-primary-light text-primary fs-7 fs-lg-6 rounded-pill">#大肌肌</a>
+                                        <a href="#"
+                                            class="btn btn-primary-light text-primary fs-7 fs-lg-6 rounded-pill">#又要找下一間</a>
+                                        <a href="#"
+                                            class="btn btn-primary-light text-primary fs-7 fs-lg-6 rounded-pill">#爛場地(物理上)</a>
                                     </div>
                                     <!-- emoji -->
                                     <div class="d-flex align-items-center position-relative mb-2">
@@ -403,8 +433,13 @@
                                     </div>
                                     <!-- ad -->
                                     <div
-                                        class="forum__article__ad bg-secondary d-flex align-items-center justify-content-center mb-10">
-                                        <p class="text-primary fw-bold mb-0">Gym Plate Ad</p>
+                                        class="forum__article__ad forum__article__ad__modal bg-secondary d-flex align-items-center justify-content-evenly mb-10">
+                                        <div class="text-primary">
+                                            <p class="fs-7 mb-0">老師、助教、學生都愛</p>
+                                            <h5 class="fw-bold mb-0">大 X 保肝丸</h5>
+                                            <p class="fs-7 mb-0">舒適你/妳的肝</p>
+                                        </div>
+                                        <p class="text-primary fw-bold mb-0 d-none d-sm-block">Gym Plate Ad</p>
                                     </div>
                                     <!-- message -->
                                     <div class="bg-light text-gray-c py-10">
@@ -414,7 +449,7 @@
 
                                             <!--  -->
 
-                                            <!-- card -->
+                                            <!-- B1 -->
                                             <div class="card bg-transparent border-0 mb-3">
                                                 <div class="row g-0">
                                                     <div class="col-md-1">
@@ -429,15 +464,17 @@
                                                             <div class="w-75">
                                                                 <a href="#" class="card-title text-blue fs-7">來我家看貓</a>
                                                                 <p class="card-text text-secondary">這也被轟得太慘了...</p>
-                                                                <p class="card-text d-flex align-items-center">
+                                                                <p class="card-text d-sm-flex align-items-center">
                                                                     <small class="text-muted">B1．4 小時前(已編輯)</small>
-                                                                    <a class="ms-4" href="#">回覆</a>
+                                                                    <a class="ms-sm-4" href="#">回覆</a>
                                                                 </p>
-                                                                <a class="mb-0 d-flex align-items-center" data-bs-toggle="collapse"
+                                                                <a class="mb-0 d-flex align-items-center"
+                                                                    data-bs-toggle="collapse"
                                                                     href="#collapseModalMessage" role="button">
-                                                                    <span class="material-symbols-outlined">
+                                                                    <span
+                                                                        class="material-symbols-outlined d-none d-sm-block">
                                                                         arrow_right_alt
-                                                                        </span>
+                                                                    </span>
                                                                     查看其他 3則留言</a>
                                                                 <div class="collapse" id="collapseModalMessage">
                                                                     <!-- other message card start -->
@@ -445,29 +482,35 @@
                                                                         <div class="row g-0">
                                                                             <div class="col-md-1">
                                                                                 <a href="#">
-                                                                                    <img src="./assets/images/raoul-droog-yMSecCHsIBc-unsplash.jpg"
+                                                                                    <img src="./assets/images/jamie-street-UtrE5DcgEyg-unsplash.jpg"
                                                                                         class="forum__article__modal__img img-fluid rounded-circle"
                                                                                         alt="modal-message-img01">
                                                                                 </a>
                                                                             </div>
                                                                             <div class="col-md-11">
-                                                                                <div class="card-body d-flex justify-content-between p-0">
+                                                                                <div
+                                                                                    class="card-body d-flex justify-content-between p-0">
                                                                                     <div>
-                                                                                        <a href="#" class="card-title text-blue fs-7">來我家看貓</a>
-                                                                                        <p class="card-text text-secondary">這也被轟得太慘了...</p>
-                                                                                        <p class="card-text d-flex align-items-center">
-                                                                                            <small class="text-muted">B1．4 小時前(已編輯)</small>
-                                                                                            <a class="ms-4" href="#">回覆</a>
+                                                                                        <a href="#"
+                                                                                            class="card-title text-blue fs-7">來我家看狗</a>
+                                                                                        <p
+                                                                                            class="card-text text-secondary">
+                                                                                            這也被轟得太慘了....</p>
+                                                                                        <p
+                                                                                            class="card-text d-sm-flex align-items-center">
+                                                                                            <small
+                                                                                                class="text-muted">B1．4
+                                                                                                小時前(已編輯)</small>
+                                                                                            <a class="ms-sm-4"
+                                                                                                href="#">回覆</a>
                                                                                         </p>
-                                                                                        <div class="collapse" id="collapseModalMessage">
-                                                                                            <!-- card -->
-                                                                                            <p></p>
-                                                                                        </div>
                                                                                     </div>
-                                                                                    <a class="d-flex" href="#" title="心情">
+                                                                                    <a class="d-flex" href="#"
+                                                                                        title="心情">
                                                                                         <span
                                                                                             class="material-symbols-outlined align-middle text-gray hover-text-danger">favorite</span>
-                                                                                        <span class="text-gray ms-2">7</span>
+                                                                                        <span
+                                                                                            class="text-gray ms-2">7</span>
                                                                                     </a>
                                                                                 </div>
                                                                             </div>
@@ -477,29 +520,35 @@
                                                                         <div class="row g-0">
                                                                             <div class="col-md-1">
                                                                                 <a href="#">
-                                                                                    <img src="./assets/images/raoul-droog-yMSecCHsIBc-unsplash.jpg"
+                                                                                    <img src="./assets/images/emiliano-vittoriosi-3FSBkX4yG80-unsplash.jpg"
                                                                                         class="forum__article__modal__img img-fluid rounded-circle"
-                                                                                        alt="modal-message-img01">
+                                                                                        alt="modal-message-img02">
                                                                                 </a>
                                                                             </div>
                                                                             <div class="col-md-11">
-                                                                                <div class="card-body d-flex justify-content-between p-0">
+                                                                                <div
+                                                                                    class="card-body d-flex justify-content-between p-0">
                                                                                     <div>
-                                                                                        <a href="#" class="card-title text-blue fs-7">來我家看貓</a>
-                                                                                        <p class="card-text text-secondary">這也被轟得太慘了...</p>
-                                                                                        <p class="card-text d-flex align-items-center">
-                                                                                            <small class="text-muted">B1．4 小時前(已編輯)</small>
-                                                                                            <a class="ms-4" href="#">回覆</a>
+                                                                                        <a href="#"
+                                                                                            class="card-title text-blue fs-7">來我家看兔</a>
+                                                                                        <p
+                                                                                            class="card-text text-secondary">
+                                                                                            這也被轟得太慘了.....</p>
+                                                                                        <p
+                                                                                            class="card-text d-sm-flex align-items-center">
+                                                                                            <small
+                                                                                                class="text-muted">B1．4
+                                                                                                小時前(已編輯)</small>
+                                                                                            <a class="ms-sm-4"
+                                                                                                href="#">回覆</a>
                                                                                         </p>
-                                                                                        <div class="collapse" id="collapseModalMessage">
-                                                                                            <!-- card -->
-                                                                                            <p></p>
-                                                                                        </div>
                                                                                     </div>
-                                                                                    <a class="d-flex" href="#" title="心情">
+                                                                                    <a class="d-flex" href="#"
+                                                                                        title="心情">
                                                                                         <span
                                                                                             class="material-symbols-outlined align-middle text-gray hover-text-danger">favorite</span>
-                                                                                        <span class="text-gray ms-2">7</span>
+                                                                                        <span
+                                                                                            class="text-gray ms-2">7</span>
                                                                                     </a>
                                                                                 </div>
                                                                             </div>
@@ -509,29 +558,36 @@
                                                                         <div class="row g-0">
                                                                             <div class="col-md-1">
                                                                                 <a href="#">
-                                                                                    <img src="./assets/images/raoul-droog-yMSecCHsIBc-unsplash.jpg"
+                                                                                    <img src="./assets/images/ajith-s-eG8mqQEkg4Q-unsplash.jpg"
                                                                                         class="forum__article__modal__img img-fluid rounded-circle"
-                                                                                        alt="modal-message-img01">
+                                                                                        alt="modal-message-img03">
                                                                                 </a>
                                                                             </div>
                                                                             <div class="col-md-11">
-                                                                                <div class="card-body d-flex justify-content-between p-0">
+                                                                                <div
+                                                                                    class="card-body d-flex justify-content-between p-0">
                                                                                     <div>
-                                                                                        <a href="#" class="card-title text-blue fs-7">來我家看貓</a>
-                                                                                        <p class="card-text text-secondary">這也被轟得太慘了...</p>
-                                                                                        <p class="card-text d-flex align-items-center">
-                                                                                            <small class="text-muted">B1．4 小時前(已編輯)</small>
-                                                                                            <a class="ms-4" href="#">回覆</a>
+                                                                                        <a href="#"
+                                                                                            class="card-title text-blue fs-7">來我家看房</a>
+                                                                                        <p
+                                                                                            class="card-text text-secondary">
+                                                                                            這也被轟得太慘了...................................
                                                                                         </p>
-                                                                                        <div class="collapse" id="collapseModalMessage">
-                                                                                            <!-- card -->
-                                                                                            <p></p>
-                                                                                        </div>
+                                                                                        <p
+                                                                                            class="card-text d-sm-flex align-items-center">
+                                                                                            <small
+                                                                                                class="text-muted">B1．4
+                                                                                                小時前(已編輯)</small>
+                                                                                            <a class="ms-sm-4"
+                                                                                                href="#">回覆</a>
+                                                                                        </p>
                                                                                     </div>
-                                                                                    <a class="d-flex" href="#" title="心情">
+                                                                                    <a class="d-flex" href="#"
+                                                                                        title="心情">
                                                                                         <span
                                                                                             class="material-symbols-outlined align-middle text-gray hover-text-danger">favorite</span>
-                                                                                        <span class="text-gray ms-2">7</span>
+                                                                                        <span
+                                                                                            class="text-gray ms-2">2145</span>
                                                                                     </a>
                                                                                 </div>
                                                                             </div>
@@ -555,7 +611,7 @@
 
                                             <hr>
 
-                                            <!-- card -->
+                                            <!-- B2 -->
                                             <div class="card bg-transparent border-0 mb-3">
                                                 <div class="row g-0">
                                                     <div class="col-md-1">
@@ -570,9 +626,9 @@
                                                             <div class="w-75">
                                                                 <a href="#" class="card-title text-blue fs-7">復仇者聯盟</a>
                                                                 <p class="card-text text-secondary">加入我們吧</p>
-                                                                <p class="card-text d-flex align-items-center">
+                                                                <p class="card-text d-sm-flex align-items-center">
                                                                     <small class="text-muted">B2．1 小時前</small>
-                                                                    <a class="ms-4" href="#">回覆</a>
+                                                                    <a class="ms-sm-4" href="#">回覆</a>
                                                                 </p>
                                                             </div>
                                                             <a class="d-flex" href="#" title="心情">
@@ -587,7 +643,7 @@
 
                                             <hr>
 
-                                            <!-- card -->
+                                            <!-- B3 -->
                                             <div class="card bg-transparent border-0 mb-3">
                                                 <div class="row g-0">
                                                     <div class="col-md-1">
@@ -601,10 +657,11 @@
                                                         <div class="card-body d-flex justify-content-between p-0">
                                                             <div class="w-75">
                                                                 <a href="#" class="card-title text-blue fs-7">巨石</a>
-                                                                <p class="card-text text-secondary">哥，來我這間吧，你想帶金槌還是銀槌還是棒槌都沒問題！</p>
-                                                                <p class="card-text d-flex align-items-center">
+                                                                <p class="card-text text-secondary">
+                                                                    哥，來我這間吧，你想帶金槌還是銀槌還是棒槌都沒問題！</p>
+                                                                <p class="card-text d-sm-flex align-items-center">
                                                                     <small class="text-muted">B3．10 分鐘前</small>
-                                                                    <a class="ms-4" href="#">回覆</a>
+                                                                    <a class="ms-sm-4" href="#">回覆</a>
                                                                 </p>
                                                             </div>
                                                             <a class="d-flex" href="#" title="心情">
@@ -702,9 +759,66 @@
                     </ul>
                 </nav>
 
+
+
             </div>
         </div>
     </section>
+
+    <a href="#" class="forum__article__publish fs-1" title="發表新文章" data-bs-toggle="modal"
+        data-bs-target="#publishModal">
+        <i class="bi bi-plus-circle"></i>
+    </a>
+
+    <!-- publish modal -->
+    <div class="modal fade" id="publishModal" tabindex="-1" aria-labelledby="publishModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-fullscreen-md-down modal-dialog-scrollable">
+            <div class="modal-content">
+                <!-- header -->
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- body -->
+                <div class="modal-body px-4 px-lg-10 pb-10">
+                    <div class="d-flex mb-8">
+                        <i class="bi bi-person-circle me-2"></i>
+                        <p class="mb-0">八角</p>
+                    </div>
+                    <form>
+                        <label for="publishTitle" class="form-label">標題</label>
+                        <input type="text" class="form-control mb-8" id="publishTitle" placeholder="輸入標題">
+                        <label for="publishContent" class="form-label">內文</label>
+                        <textarea class="form-control mb-8" id="publishContent" placeholder="在想些甚麼？" style="height: 300px;"></textarea>
+                        <p class="mb-2">相片 / 影片</p>
+                        <div class="d-lg-flex mb-8">
+                            <div class="downloadBox border border-1 d-flex justify-content-center align-items-center position-relative">
+                                <input type="file" class="form-control w-75">
+                            </div>
+                            <div class="downloadBox border border-1 d-flex justify-content-center align-items-center position-relative">
+                                <input type="file" class="form-control w-75">
+                            </div>
+                        </div>
+                        <label for="publishTag" class="form-label">新增標籤</label>
+                        <input type="text" class="form-control mb-2" id="publishTag" placeholder="六角學院讚讚讚">
+                        <div class="d-flex gap-4 flex-wrap">
+                            <a href="#"
+                                class="btn btn-primary-light text-primary fs-7 fs-lg-6 rounded-pill">#床前明月光</a>
+                            <a href="#"
+                                class="btn btn-primary-light text-primary fs-7 fs-lg-6 rounded-pill">#今天要比昨天進步</a>
+                            <a href="#"
+                                class="btn btn-primary-light text-primary fs-7 fs-lg-6 rounded-pill"># 2022 切版直播班</a>
+                        </div>
+                    </form>
+                </div>
+                <!-- footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-outline-primary">儲存送出</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </main>
 
     <footer class="bg-secondary letter-space-1 py-6">
@@ -725,28 +839,40 @@
               <a class="nav-link link-white hover-text-primary" href="./forum.html">教練討論區</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-white hover-text-primary pe-lg-0" href="#">會員登入</a>
+              <a class="nav-link link-white hover-text-primary pe-lg-0" href="./member-login.html">會員登入</a>
             </li>
           </ul>
           <!-- footer info -->
           <div class="mb-12 mb-lg-4">
             <ul class="list-unstyled d-flex justify-content-center justify-content-sm-between align-items-center">
-              <li><a href="#" title="facebook"><i class="bi bi-facebook d-block hover-text-white hover-scale-larger transtion-slow  fs-3"></i></a></li>
-              <li><a href="#" title="twitter"><i class="bi bi-twitter d-block hover-text-white hover-scale-larger transtion-slow fs-3 ms-8"></i></a></li>
-              <li><a href="#" title="instagram"><i class="bi bi-instagram d-block hover-text-white hover-scale-larger transtion-slow  fs-3 ms-8"></i></a></li>
-              <li><a href="#" title="youtube"><i class="bi bi-youtube d-block hover-text-white hover-scale-larger transtion-slow  fs-3 ms-8"></i></a></li>
+              <li><a href="#" title="facebook"><i
+                    class="bi bi-facebook d-block hover-text-white hover-scale-larger transtion-slow  fs-3"></i></a>
+              </li>
+              <li><a href="#" title="twitter"><i
+                    class="bi bi-twitter d-block hover-text-white hover-scale-larger transtion-slow fs-3 ms-8"></i></a>
+              </li>
+              <li><a href="#" title="instagram"><i
+                    class="bi bi-instagram d-block hover-text-white hover-scale-larger transtion-slow  fs-3 ms-8"></i></a>
+              </li>
+              <li><a href="#" title="youtube"><i
+                    class="bi bi-youtube d-block hover-text-white hover-scale-larger transtion-slow  fs-3 ms-8"></i></a>
+              </li>
             </ul>
-            <p class="align-middle text-center text-white mb-0">聯絡電話：<a class="link-white d-inline hover-text-primary" href="tel:0988666888">0988666888</a></p>
-            <p class="align-middle text-white mb-0">Email：<a class="link-white d-inline hover-text-primary" href="mailto:gymplate@gmail.com">gymplate@gmail.com</a></p>
+            <p class="align-middle text-center text-white mb-0">聯絡電話：<a class="link-white d-inline hover-text-primary"
+                href="tel:0988666888">0988666888</a></p>
+            <p class="align-middle text-white mb-0">Email：<a class="link-white d-inline hover-text-primary"
+                href="mailto:gymplate@gmail.com">gymplate@gmail.com</a></p>
           </div>
         </div>
         <!-- footer copyright -->
-        <p class="text-center mb-0">Copyright <i class="bi bi-c-circle"></i><br class="d-sm-none">Gym Plate All Rights Reserved.</p>
+        <p class="text-center mb-0">Copyright <i class="bi bi-c-circle"></i><br class="d-sm-none">Gym Plate All Rights
+          Reserved.</p>
       </div>
     </footer>
 
 
-  
+
+
     <script src="/path/to/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

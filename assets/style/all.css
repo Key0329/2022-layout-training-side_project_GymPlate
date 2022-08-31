@@ -27419,6 +27419,16 @@ body {
   background-color: #dc3545 !important;
 }
 
+.hover-bg-blue:hover {
+  background-color: #5390ec !important;
+}
+
+.hover-bg-google:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#4285F4), color-stop(#DB4437), color-stop(#F4B400), to(#0F9D58));
+  background-image: -o-linear-gradient(left, #4285F4, #DB4437, #F4B400, #0F9D58);
+  background-image: linear-gradient(to right, #4285F4, #DB4437, #F4B400, #0F9D58);
+}
+
 .hover-border-primary:hover {
   border: 5px solid #db4f00 !important;
 }
@@ -27452,6 +27462,10 @@ body {
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.border-google {
+  border-color: #4285F4 #DB4437 #F4B400 #0F9D58 !important;
 }
 
 .deco-border--header-nav::before {
@@ -28136,7 +28150,13 @@ main {
 }
 
 .forum__article__ad {
-  height: 50px;
+  height: 100px;
+}
+
+.forum__article__ad__modal {
+  background-image: url(../images/towfiqu-barbhuiya-w8p9cQDLX7I-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .forum__article__content__img {
@@ -28149,8 +28169,29 @@ main {
   height: 32px;
 }
 
+.forum__article__publish {
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+}
+
 .sticky-top-article-modal {
   top: 20px;
+}
+
+.downloadBox {
+  width: 100%;
+  height: 200px;
+}
+
+.member__login__img {
+  height: 600px;
+}
+
+.member-register {
+  background-image: url(../images/anastase-maragos-4dlhin0ghOk-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 /*# sourceMappingURL=all.css.map */
