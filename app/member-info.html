@@ -1,0 +1,94 @@
+---
+title: Gym Plate - member-info
+layout: ./app/layout.ejs
+engine: ejs
+current: member-info
+---
+
+<main class="py-16 py-md-32">
+    <section class="container">
+        <div class="row">
+            <!-- menu -->
+            <aside class="col-3 d-none d-md-block">
+                <ul class="list-group member__info__menu position-relative h-100">
+                    <li class="list-group-item border-0 text-center mb-4"><a class="fs-5" href="#">基本資料</a></li>
+                    <li class="list-group-item border-0 text-center mb-4"><a class="fs-5" href="#">重設密碼</a></li>
+                    <li class="list-group-item border-0 text-center mb-4"><a class="fs-5" href="#">通知設定</a></li>
+                    <li class="list-group-item border-0 text-center mb-4"><a class="fs-5" href="#">連結設定</a></li>
+                    <li class="list-group-item border-0 text-center mb-4"><a class="fs-5" href="#">刪除帳號</a></li>
+                </ul>
+            </aside>
+            <!-- info -->
+            <div class="col-md-9">
+                <div class="row mb-10 mb-md-20">
+                    <div class="col-lg-4 d-flex flex-column align-items-center mb-12 mb-lg-0">
+                        <img class="member__info__img rounded-circle mb-4" src="./assets/images/info-img.jpg"
+                            alt="member-info-img">
+                        <a href="#" class="btn btn-outline-secondary">變更圖片</a>
+                    </div>
+                    <div class="col-lg-8 text-center text-lg-start">
+                        <div class="mb-8">
+                            <div class="d-flex justify-content-center justify-content-lg-start align-items-center mb-1">
+                                <h5 class="fw-bold mb-0">帳號 (Email)</h5>
+                                <a href="#"><i class="bi bi-pencil-square align-middle ms-2"></i></a>
+                            </div>
+                            <p class="text-secondary mb-0">loveandthunder@gmail.com</p>
+                        </div>
+                        <div class="mb-8">
+                            <div class="d-flex justify-content-center justify-content-lg-start align-items-center mb-1">
+                                <h5 class="fw-bold mb-0">真實姓名</h5>
+                                <a href="#"><i class="bi bi-pencil-square align-middle ms-2"></i></a>
+                            </div>
+                            <p class="text-secondary mb-0">Chris Hams</p>
+                        </div>
+                        <div class="mb-8">
+                            <div class="d-flex justify-content-center justify-content-lg-start align-items-center mb-1">
+                                <h5 class="fw-bold mb-0">暱稱</h5>
+                                <a href="#"><i class="bi bi-pencil-square align-middle ms-2"></i></a>
+                            </div>
+                            <p class="text-secondary mb-0">雷神索爾</p>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-center justify-content-lg-start align-items-center mb-1">
+                                <h5 class="fw-bold mb-0">個人簡介</h5>
+                                <a href="#"><i class="bi bi-pencil-square align-middle ms-2"></i></a>
+                            </div>
+                            <p class="text-secondary mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Eveniet perferendis nisi necessitatibus. Nobis asperiores.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row align-items-center justify-content-end">
+                    <a href="#" class="btn btn-outline-secondary w-75 w-md-25 me-md-4 mb-2 mb-md-0">取消</a>
+                    <a href="#" class="btn btn-outline-primary w-75 w-md-25">確認修改</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- offcanvas -->
+    <a class="btn d-md-none position-fixed left-0 bottom-25 rounded-0 p-0" data-bs-toggle="offcanvas" href="#offcanvasInfoMenu" role="button"
+        aria-controls="offcanvasInfoMenu">
+        <i class="bi bi-arrow-right-square display-2 text-primary"></i>
+    </a>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasInfoMenu" aria-labelledby="offcanvasInfoMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasInfoMenuLabel">個人設定</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                <ul class="list-group position-relative h-100">
+                    <li class="list-group-item border-0 text-center mb-4"><a class="fs-5" href="#">基本資料</a></li>
+                    <li class="list-group-item border-0 text-center mb-4"><a class="fs-5" href="#">重設密碼</a></li>
+                    <li class="list-group-item border-0 text-center mb-4"><a class="fs-5" href="#">通知設定</a></li>
+                    <li class="list-group-item border-0 text-center mb-4"><a class="fs-5" href="#">連結設定</a></li>
+                    <li class="list-group-item border-0 text-center mb-4"><a class="fs-5" href="#">刪除帳號</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</main>

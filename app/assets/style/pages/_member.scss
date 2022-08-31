@@ -1,0 +1,29 @@
+.member__login{
+    &__img{
+        height: 600px;
+    }
+}
+
+.member-register{
+    background-image: url(../images/anastase-maragos-4dlhin0ghOk-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.member__info{
+    &__menu{
+        &::after{
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 2px;
+            background: $gray;
+            right: 0; 
+        }
+    }
+    &__img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
