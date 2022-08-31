@@ -11,6 +11,7 @@
 
 @import "./components/utilities";
 @import "./components/hover";
+@import "./components/border";
 
 @import './layout/header';
 @import './pages/index';
@@ -19,3 +20,6 @@
 @import './pages/gym-detail';
 @import './pages/forum';
 @import './pages/forum-article';
+@import './pages/member-login';
+@import './pages/member-register';
+

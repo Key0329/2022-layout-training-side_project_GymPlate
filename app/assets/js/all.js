@@ -1,13 +1,4 @@
 $(document).ready(function () {
-  // ----------------------  header ---------------------- 
-
-  // $(document).ready(function(){
-  //   $(window).on('wheel', function(event){
-  //     if(event.originalEvent.deltaY > 0){
-  //       $("header").removeClass("bg-transparent").addClass("bg-secondary");
-  //     }
-  //   });
-  // });
 
   // ---------------------- swiper ---------------------- 
 
@@ -184,6 +175,13 @@ $(document).ready(function () {
     $(".exp-1, .exp-2").addClass("d-none");
   });
 
+  // ---------------------- 切換layout會員狀態 ---------------------- 
+    $(".member__login__button").click(function (e) {
+      event.preventDefault();
+      $("#index__login__status").removeClass("d-none");
+      $("#index__login__button").addClass("d-none");
+    });
+
   // ---------------------- masonry ---------------------- 
   $('.grid').masonry({
     // options...
@@ -198,3 +196,35 @@ $(document).ready(function () {
 
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // // ---------------------- scroll top 找不到無效的原因，暫時放棄未來再找 ---------------------- 
+  // $(".toTop").click(function(e){
+  //   e.preventDefault();
+  //   $("html, body").animate(
+  //     {
+  //       scrollTop: 0,
+  //     },
+  //     600
+  //   );
+  // })

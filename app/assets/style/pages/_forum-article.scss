@@ -7,7 +7,12 @@
     }
 
     &__ad {
-        height: 50px;
+        height: 100px;
+        &__modal{
+            background-image: url(../images/towfiqu-barbhuiya-w8p9cQDLX7I-unsplash.jpg);
+            background-size: cover;
+            background-position: center;
+        }
     }
 
     &__content {
@@ -23,8 +28,18 @@
             height: 32px;
         }
     }
+    &__publish{
+        position: fixed;
+        right: 20px;
+        bottom: 40px;
+    }
 }
 
 .sticky-top-article-modal{
     top: 20px;
+}
+
+.downloadBox{
+    width: 100%;
+    height: 200px;
 }
