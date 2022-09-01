@@ -23,6 +23,15 @@
 
 <body>
 
+   <!-- //讀取畫面 -->
+    <div class="loading" id="preloader">
+    <div class="load d-flex justify-content-center align-items-center">
+      <img src="./assets/images/giphy02.gif" />
+      <p class="fs-1 fw-bold">Loading ...  </p>
+    </div>
+  </div>
+
+  <!-- header -->
   <header class="bg-secondary fixed-top letter-space-1 bg-secondary py-2 px-6">
     <div class="container-fluid d-flex justify-content-between align-items-center">
       <!-- header logo -->
@@ -90,8 +99,7 @@
         <a class="nav-link text-white hover-text-primary hover-bg-white py-3" href="./forum.html">看板分類</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white hover-text-primary hover-bg-white d-flex py-3" href="./member-login.html"
-          data-bs-toggle="modal" data-bs-target="#loginModal">
+        <a class="nav-link text-white hover-text-primary hover-bg-white d-flex py-3" href="./member-login.html">
           <i class="material-icons-round align-middle me-1 ms-auto">
             account_circle
           </i>
@@ -108,11 +116,11 @@
             <!-- menu -->
             <aside class="col-3 d-none d-md-block">
                 <ul class="list-group member__info__menu position-relative h-100">
-                    <li class="list-group-item border-0 text-center mb-4"><a class="fs-5" href="#">基本資料</a></li>
-                    <li class="list-group-item border-0 text-center mb-4"><a class="fs-5" href="#">重設密碼</a></li>
-                    <li class="list-group-item border-0 text-center mb-4"><a class="fs-5" href="#">通知設定</a></li>
-                    <li class="list-group-item border-0 text-center mb-4"><a class="fs-5" href="#">連結設定</a></li>
-                    <li class="list-group-item border-0 text-center mb-4"><a class="fs-5" href="#">刪除帳號</a></li>
+                    <li class="list-group-item border-0 text-center mb-4"><a class="fs-5 hover-decoBorder-left" href="#">基本資料</a></li>
+                    <li class="list-group-item border-0 text-center mb-4"><a class="fs-5 hover-decoBorder-left" href="#">重設密碼</a></li>
+                    <li class="list-group-item border-0 text-center mb-4"><a class="fs-5 hover-decoBorder-left" href="#">通知設定</a></li>
+                    <li class="list-group-item border-0 text-center mb-4"><a class="fs-5 hover-decoBorder-left" href="#">連結設定</a></li>
+                    <li class="list-group-item border-0 text-center mb-4"><a class="fs-5 hover-decoBorder-left" href="#">刪除帳號</a></li>
                 </ul>
             </aside>
             <!-- info -->
@@ -164,24 +172,29 @@
     </section>
 
     <!-- offcanvas -->
-    <a class="btn d-md-none position-fixed left-0 bottom-25 rounded-0 p-0" data-bs-toggle="offcanvas" href="#offcanvasInfoMenu" role="button"
+    <a class="btn d-md-none position-fixed end-0 bottom-25 rounded-0 p-0" data-bs-toggle="offcanvas" href="#offcanvasInfoMenu" role="button"
         aria-controls="offcanvasInfoMenu">
-        <i class="bi bi-arrow-right-square display-2 text-primary "></i>
+        <p class="text-primary mb-0">Menu</p>
+        <i class="bi bi-card-list display-2 text-primary lh-1"></i>
     </a>
 
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasInfoMenu" aria-labelledby="offcanvasInfoMenuLabel">
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasInfoMenu" aria-labelledby="offcanvasInfoMenuLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasInfoMenuLabel">個人設定</h5>
+            <h5 class="offcanvas-title text-secondary" id="offcanvasInfoMenuLabel">個人設定</h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             <div>
                 <ul class="list-group position-relative h-100">
-                    <li class="list-group-item border-0 text-center mb-4"><a class="fs-5" href="#">基本資料</a></li>
-                    <li class="list-group-item border-0 text-center mb-4"><a class="fs-5" href="#">重設密碼</a></li>
-                    <li class="list-group-item border-0 text-center mb-4"><a class="fs-5" href="#">通知設定</a></li>
-                    <li class="list-group-item border-0 text-center mb-4"><a class="fs-5" href="#">連結設定</a></li>
-                    <li class="list-group-item border-0 text-center mb-4"><a class="fs-5" href="#">刪除帳號</a></li>
+                    <li class="list-group-item border-0 text-center"><a class="fs-5" href="#">基本資料</a></li>
+                    <hr>
+                    <li class="list-group-item border-0 text-center"><a class="fs-5" href="#">重設密碼</a></li>
+                    <hr>
+                    <li class="list-group-item border-0 text-center"><a class="fs-5" href="#">通知設定</a></li>
+                    <hr>
+                    <li class="list-group-item border-0 text-center"><a class="fs-5" href="#">連結設定</a></li>
+                    <hr>
+                    <li class="list-group-item border-0 text-center"><a class="fs-5" href="#">刪除帳號</a></li>
                 </ul>
             </div>
         </div>
