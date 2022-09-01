@@ -1,14 +1,15 @@
+// ---------------------- preloader ---------------------- 
+$(window).on('load',function(){
+  $('.loading').toggleClass('loader-hide');
+})
+
 $(document).ready(function () {
+
 
   // ---------------------- swiper ---------------------- 
 
   // swiper-place
   const index__swiper__place = new Swiper('.index__swiper__place', {
-    // Optional parameters
-    // direction: 'horizontal',
-    // loop: true,
-    // freeMode: true,
-    // centeredSlides: true,
     slidesPerView: 1,
     spaceBetween: 10,
 

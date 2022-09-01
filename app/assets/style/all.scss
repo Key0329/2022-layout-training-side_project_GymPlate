@@ -12,8 +12,9 @@
 @import "./components/utilities";
 @import "./components/hover";
 @import "./components/border";
+@import "./components/offcanvas";
 
-@import './layout/header';
+@import './layout/layout';
 @import './pages/index';
 @import './pages/gym-list';
 @import './pages/gym-list-area';

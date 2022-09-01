@@ -9,10 +9,9 @@ current: forum-article
     <section class="pt-5 pb-10 pb-lg-20">
         <div class="container-fluid">
             <div class="row justify-content-center">
-
                 <!-- left aside dumbbell -->
                 <div class="col-lg-3">
-                    <aside class="sticky-top d-none d-lg-block">
+                    <aside class="sticky-top d-none d-lg-block loading loader-hide">
                         <ul class="list-group forum__list__group list-unstyled justify-content-between sticky-top">
                             <div class="forum__dumbbell position-relative">
                                 <li class="list-group-item border-0 bg-transparent d-flex justify-content-center p-0">
@@ -45,7 +44,6 @@ current: forum-article
                         </ul>
                     </aside>
                 </div>
-
                 <!-- article list -->
                 <div class="col-lg-6">
                     <div class="forum__article">
@@ -259,7 +257,6 @@ current: forum-article
                         </div>
                     </div>
                 </div>
-
                 <!-- article modal -->
                 <div class="modal fade" id="articleModal" tabindex="-1" aria-labelledby="articleModalLabel"
                     aria-hidden="true">
@@ -607,10 +604,9 @@ current: forum-article
                         </div>
                     </div>
                 </div>
-
                 <!-- right aside hot -->
                 <div class="col-lg-3">
-                    <aside class="sticky-top d-none d-lg-flex flex-column">
+                    <aside class="sticky-top d-none d-lg-flex flex-column loading loader-hide">
                         <a class="fs-5 text-third rounded hover-text-primary mb-4" href="#"><i
                                 class="bi bi-fire me-1"></i>熱門文章</a>
                         <ul class="list-group list-group-flush list-group-numbered align-items-start w-75">
@@ -622,7 +618,6 @@ current: forum-article
                         </ul>
                     </aside>
                 </div>
-
                 <!-- mobile bottom nav -->
                 <nav class="bg-secondary fixed-bottom d-lg-none px-0">
                     <div class="collapse" id="navbarToggleExternalContent">
@@ -661,16 +656,15 @@ current: forum-article
                         </li>
                     </ul>
                 </nav>
-
-
-
             </div>
         </div>
     </section>
 
-    <a href="#" class="forum__article__publish fs-1" title="發表新文章" data-bs-toggle="modal"
+    <!-- publish icon -->
+    <a href="#" class="forum__article__publish fs-1 d-flex flex-column align-items-center" title="發表新文章" data-bs-toggle="modal"
         data-bs-target="#publishModal">
-        <i class="bi bi-plus-circle"></i>
+        <p class="fs-7 mb-0">新文章</p>
+        <i class="bi bi-plus-circle lh-1"></i>
     </a>
 
     <!-- publish modal -->

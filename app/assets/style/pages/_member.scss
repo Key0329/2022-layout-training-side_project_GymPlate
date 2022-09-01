@@ -27,3 +27,15 @@
     }
 }
 
+.member__PlacePublish{
+    &__menu{
+        &::after{
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 2px;
+            background: $gray;
+            right: 0; 
+        }
+    }
+}
