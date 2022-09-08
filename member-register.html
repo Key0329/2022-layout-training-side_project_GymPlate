@@ -32,7 +32,7 @@
   </div>
 
   <!-- header -->
-  <header class="bg-secondary fixed-top letter-space-1 bg-secondary py-2 px-6">
+  <header class="bg-secondary fixed-top letter-space-1 bg-secondary py-3 px-6">
     <div class="container-fluid d-flex justify-content-between align-items-center">
       <!-- header logo -->
       <h2><a class="fw-bold lh-1" href="./index.html">Gym Plate</a></h2>
@@ -141,8 +141,22 @@
                 </form>
             </div>
         </section>
-        <a href="#" class="btn btn-primary text-primary-light hover-bg-primary-light hover-text-primary w-75 w-lg-25 mb-20">註冊</a>
+        <a href="#memberRegister" data-bs-toggle="modal"
+            class="btn btn-primary text-primary-light hover-bg-primary-light hover-text-primary w-75 w-lg-25 mb-20">註冊</a>
     </div>
+
+    <!-- register success modal -->
+    <div class="modal fade" id="memberRegister" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-0">
+                <div class="modal-body modal-body-register d-flex flex-column align-items-center p-6">
+                    <h3 class="text-white">註冊成功</h3>
+                    <a href="./member-login.html" class="btn btn-outline-white">回到登入頁面</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </main>
 
     <footer class="bg-secondary letter-space-1 py-6">
