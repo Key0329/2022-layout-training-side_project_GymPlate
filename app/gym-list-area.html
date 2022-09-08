@@ -5,7 +5,7 @@ engine: ejs
 current: gym-list-area
 ---
 
-<main class="bg-gray">
+<main class="gymArea">
 
     <!-- gymArea banner -->
     <section class="gymArea-banner pt-60 pb-40">
@@ -38,13 +38,13 @@ current: gym-list-area
         </div>
     </section>
 
-    <section class="py-20 py-lg-40">
+    <section class="py-10 py-lg-20">
         <div class="container-fluid px-md-8 px-lg-16">
             <div class="row g-5 g-lg-15">
 
                 <!-- aside -->
                 <div class="col-lg-4 col-xl-3">
-                    <aside class="sticky-top mb-20 mb-lg-0 loading loader-hide">
+                    <aside class="sticky-top mb-10 mb-lg-0 loading loader-hide">
                         <div class="accordion">
                             <!-- Taipei City -->
                             <div class="accordion-item">
@@ -154,7 +154,7 @@ current: gym-list-area
                                         新北市
                                     </button>
                                 </h2>
-                                <div id="gymList-collapse-newTaipeiCity" class="accordion-collapse collapse"
+                                <div id="gymList-collapse-newTaipeiCity" class="accordion-collapse collapse "
                                     aria-labelledby="gymList-heading-newTaipeiCity">
                                     <div class="accordion-body">
                                         <div
@@ -355,7 +355,7 @@ current: gym-list-area
                                         台中市
                                     </button>
                                 </h2>
-                                <div id="gymList-collapse-TaiChung" class="accordion-collapse collapse"
+                                <div id="gymList-collapse-TaiChung" class="accordion-collapse collapse "
                                     aria-labelledby="gymList-heading-TaiChung">
                                     <div class="accordion-body">
                                         <div
@@ -556,7 +556,7 @@ current: gym-list-area
                                         高雄市
                                     </button>
                                 </h2>
-                                <div id="gymList-collapse-Kaohsiung" class="accordion-collapse collapse"
+                                <div id="gymList-collapse-Kaohsiung" class="accordion-collapse collapse "
                                     aria-labelledby="gymList-heading-Kaohsiung">
                                     <div class="accordion-body">
                                         <div
@@ -791,36 +791,6 @@ current: gym-list-area
                                                         茂林區
                                                     </label>
                                                 </li>
-                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
-                                                    <label class="list-group-item border-0 py-1 px-0">
-                                                        <input class="form-check-input me-1" type="checkbox" value="">
-                                                        太平島
-                                                    </label>
-                                                </li>
-                                                <li class="col-6 col-xs-4 col-sm-3 col-md-2 col-lg-6">
-                                                    <label class="list-group-item border-0 py-1 px-0">
-                                                        <input class="form-check-input me-1" type="checkbox" value="">
-                                                        中洲礁
-                                                    </label>
-                                                </li>
-                                                <li class="col-xs-4 col-md-4 col-lg-12">
-                                                    <label class="list-group-item border-0 py-1 px-0">
-                                                        <input class="form-check-input me-1" type="checkbox" value="">
-                                                        那瑪夏區
-                                                    </label>
-                                                </li>
-                                                <li class="col-xs-4 col-md-3 col-lg-12">
-                                                    <label class="list-group-item border-0 py-1 px-0">
-                                                        <input class="form-check-input me-1" type="checkbox" value="">
-                                                        東沙群島
-                                                    </label>
-                                                </li>
-                                                <li class="col-xs-4 col-md-3 col-lg-12">
-                                                    <label class="list-group-item border-0 py-1 px-0">
-                                                        <input class="form-check-input me-1" type="checkbox" value="">
-                                                        南沙群島
-                                                    </label>
-                                                </li>
                                                 <li class="col-xs-12 col-md-3 col-lg-12">
                                                     <label class="list-group-item border-0 py-1 px-0">
                                                         <input class="form-check-input me-1" type="checkbox" value="">
@@ -839,12 +809,13 @@ current: gym-list-area
                 <!-- area -->
                 <div class="gymArea col-lg-8 col-xl-9">
                     <div
-                        class="text-center text-lg-start text-primary border-bottom border-gray-c pb-2 pb-lg-6 mb-10 position-relative">
+                        class="text-center text-lg-start text-white border-bottom border-white border-3 pb-2 pb-lg-4 mb-10 position-relative">
                         <h2 class="fw-bold display-3 mb-0">台北市</h2>
                         <span class="gymArea-sub fw-bold position-lg-absolute mb-0 fs-2">北投區 (12)</span>
                     </div>
-                    <div class="card-group flex-column">
-                        <div class="card mb-3">
+                    <div class="card-group flex-column mb-6">
+                        <!-- 1 -->
+                        <div class="card rounded-0 border-0 mb-4">
                             <div class="row g-0">
                                 <div class="col-md-4">
                                     <img src="./assets/images/50086320_992156840907901_7494591449028100096_n.jpg"
@@ -861,7 +832,7 @@ current: gym-list-area
                                                 <span
                                                     class="material-symbols-outlined gymArea-icon me-2 active">bathtub</span>
                                                 <span
-                                                    class="material-symbols-outlined gymArea-icon me-2 active">monitor_weight</span>
+                                                    class="material-symbols-outlined gymArea-icon me-2">monitor_weight</span>
                                                 <span
                                                     class="material-symbols-outlined gymArea-icon active">local_drink</span>
                                             </li>
@@ -878,32 +849,33 @@ current: gym-list-area
                                 </div>
                             </div>
                         </div>
-                        <div class="card mb-3">
+                        <!-- 2 -->
+                        <div class="card rounded-0 border-0 mb-4">
                             <div class="row g-0">
                                 <div class="col-md-4">
                                     <img src="./assets/images/craig-lovelidge-yDGsn39fbD4-unsplash.jpg"
-                                        class="img-fluid rounded-0" alt="gymArea-img-Taipei02">
+                                        class="img-fluid h-100 rounded-0" alt="gymArea-img-Taipei02">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body text-center text-lg-start d-flex flex-column h-100">
-                                        <h5 class="card-title text-secondary fw-bold mb-4">Fitness Formula<p
-                                                class="mt-2 mb-0">專屬健議</p>
+                                        <h5 class="card-title text-secondary fw-bold mb-4">MORE FIT
                                         </h5>
-                                        <p class="card-text d-none d-sm-block">位於明德路上的健身工作室，捷運走路約5分鐘可抵達，場地明亮乾淨</p>
+                                        <p class="card-text d-none d-sm-block">運動需要學習，健康操之在己。<br>讓我們協助你了解自己的體能狀況，安排適合的訓練方式，學會安全運動的知識。<br>
+                                            我們是你最有默契的健身好朋友，因為我們都是為了 More Fit 而努力。</p>
                                         <ul class="list-unstyled">
                                             <li>
                                                 <span
                                                     class="material-symbols-outlined gymArea-icon me-2 active">bathtub</span>
                                                 <span
-                                                    class="material-symbols-outlined gymArea-icon me-2">monitor_weight</span>
+                                                    class="material-symbols-outlined gymArea-icon me-2 active">monitor_weight</span>
                                                 <span
                                                     class="material-symbols-outlined gymArea-icon active">local_drink</span>
                                             </li>
                                             <li>
-                                                <p class="mb-0">租借費用：<span>300 元 / 60 分鐘</span></p>
+                                                <p class="mb-0">租借費用：<span>250 元 / 90 分鐘 (含緩衝時間)</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">營業時間：<span>09:00 ~ 22:00</span></p>
+                                                <p class="mb-0">營業時間：<span>07:00 ~ 23:00</span></p>
                                             </li>
                                         </ul>
                                         <a href="./gym-detail.html"
@@ -912,31 +884,34 @@ current: gym-list-area
                                 </div>
                             </div>
                         </div>
-                        <div class="card mb-3">
+                        <!-- 3 -->
+                        <div class="card rounded-0 border-0 mb-4">
                             <div class="row g-0">
                                 <div class="col-md-4">
                                     <img src="./assets/images/craig-lovelidge-COxd0Jbe7u8-unsplash.jpg"
-                                        class="img-fluid rounded-0" alt="gymArea-img-Taipei03">
+                                        class="img-fluid h-100 rounded-0" alt="gymArea-img-Taipei03">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body text-center text-lg-start d-flex flex-column h-100">
-                                        <h5 class="card-title text-secondary fw-bold mb-4">Fitness Formula<p
-                                                class="mt-2 mb-0">專屬健議</p>
+                                        <h5 class="card-title text-secondary fw-bold mb-4">Farmer's Walk<p
+                                                class="mt-2 mb-0">農夫走路健身</p>
                                         </h5>
-                                        <p class="card-text d-none d-sm-block">位於明德路上的健身工作室，捷運走路約5分鐘可抵達，場地明亮乾淨</p>
+                                        <p class="card-text d-none d-sm-block">Keep running to get closer to the dream<br>
+                                            不斷奔跑，才能更靠近夢想<br>
+                                            ㄧ農夫走路健身</p>
                                         <ul class="list-unstyled">
                                             <li>
                                                 <span
                                                     class="material-symbols-outlined gymArea-icon me-2 active">bathtub</span>
                                                 <span
                                                     class="material-symbols-outlined gymArea-icon me-2">monitor_weight</span>
-                                                <span class="material-symbols-outlined gymArea-icon">local_drink</span>
+                                                <span class="material-symbols-outlined gymArea-icon active">local_drink</span>
                                             </li>
                                             <li>
-                                                <p class="mb-0">租借費用：<span>300 元 / 60 分鐘</span></p>
+                                                <p class="mb-0">租借費用：<span>150 元 / 70 分鐘</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">營業時間：<span>09:00 ~ 22:00</span></p>
+                                                <p class="mb-0">營業時間：<span>07:00 ~ 23:00</span></p>
                                             </li>
                                         </ul>
                                         <a href="./gym-detail.html"
@@ -945,18 +920,19 @@ current: gym-list-area
                                 </div>
                             </div>
                         </div>
-                        <div class="card mb-3">
+                        <!-- 4 -->
+                        <div class="card rounded-0 border-0 mb-4">
                             <div class="row g-0">
                                 <div class="col-md-4">
                                     <img src="./assets/images/mark-bertulfo-XKimW0pke6w-unsplash.jpg"
-                                        class="img-fluid rounded-0" alt="gymArea-img-Taipei04">
+                                        class="img-fluid h-100 rounded-0" alt="gymArea-img-Taipei04">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body text-center text-lg-start d-flex flex-column h-100">
-                                        <h5 class="card-title text-secondary fw-bold mb-4">Fitness Formula<p
-                                                class="mt-2 mb-0">專屬健議</p>
+                                        <h5 class="card-title text-secondary fw-bold mb-4">體育客 1ST Fitness<p
+                                                class="mt-2 mb-0">輔大店</p>
                                         </h5>
-                                        <p class="card-text d-none d-sm-block">位於明德路上的健身工作室，捷運走路約5分鐘可抵達，場地明亮乾淨</p>
+                                        <p class="card-text d-none d-sm-block">無綁約、無入會費，單次計費，無負擔<br>體育客體適能中心，新莊優質健身</p>
                                         <ul class="list-unstyled">
                                             <li>
                                                 <span
@@ -967,10 +943,10 @@ current: gym-list-area
                                                     class="material-symbols-outlined gymArea-icon active">local_drink</span>
                                             </li>
                                             <li>
-                                                <p class="mb-0">租借費用：<span>300 元 / 60 分鐘</span></p>
+                                                <p class="mb-0">租借費用：<span>250 元 / 70 分鐘</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">營業時間：<span>09:00 ~ 22:00</span></p>
+                                                <p class="mb-0">營業時間：<span>07:00 ~ 24:00</span></p>
                                             </li>
                                         </ul>
                                         <a href="./gym-detail.html"
@@ -979,29 +955,31 @@ current: gym-list-area
                                 </div>
                             </div>
                         </div>
-                        <div class="card mb-3">
+                        <!-- 5 -->
+                        <div class="card rounded-0 border-0 mb-4">
                             <div class="row g-0">
                                 <div class="col-md-4">
                                     <img src="./assets/images/sven-mieke-MsCgmHuirDo-unsplash.jpg"
-                                        class="img-fluid rounded-0" alt="gymArea-img-Taipei05">
+                                        class="img-fluid h-100 rounded-0" alt="gymArea-img-Taipei05">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body text-center text-lg-start d-flex flex-column h-100">
-                                        <h5 class="card-title text-secondary fw-bold mb-4">Fitness Formula<p
-                                                class="mt-2 mb-0">專屬健議</p>
+                                        <h5 class="card-title text-secondary fw-bold mb-4">Puzzle Gym<p
+                                                class="mt-2 mb-0">拍手健身</p>
                                         </h5>
-                                        <p class="card-text d-none d-sm-block">位於明德路上的健身工作室，捷運走路約5分鐘可抵達，場地明亮乾淨</p>
+                                        <p class="card-text d-none d-sm-block">1. 提供客製化運動課程 （小時計費）<br>
+                                            2. 場地租借</p>
                                         <ul class="list-unstyled">
                                             <li>
                                                 <span
-                                                    class="material-symbols-outlined gymArea-icon me-2 active">bathtub</span>
+                                                    class="material-symbols-outlined gymArea-icon me-2">bathtub</span>
                                                 <span
-                                                    class="material-symbols-outlined gymArea-icon me-2 active">monitor_weight</span>
+                                                    class="material-symbols-outlined gymArea-icon me-2">monitor_weight</span>
                                                 <span
                                                     class="material-symbols-outlined gymArea-icon active">local_drink</span>
                                             </li>
                                             <li>
-                                                <p class="mb-0">租借費用：<span>300 元 / 60 分鐘</span></p>
+                                                <p class="mb-0">租借費用：<span>500 元 / 60 分鐘</span></p>
                                             </li>
                                             <li>
                                                 <p class="mb-0">營業時間：<span>09:00 ~ 22:00</span></p>
@@ -1013,18 +991,21 @@ current: gym-list-area
                                 </div>
                             </div>
                         </div>
-                        <div class="card mb-3">
+                        <!-- 6 -->
+                        <div class="card rounded-0 border-0 mb-4">
                             <div class="row g-0">
                                 <div class="col-md-4">
                                     <img src="./assets/images/humphrey-muleba-LOA2mTj1vhc-unsplash.jpg"
-                                        class="img-fluid rounded-0" alt="gymArea-img-Taipei06">
+                                        class="img-fluid h-100 rounded-0" alt="gymArea-img-Taipei06">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body text-center text-lg-start d-flex flex-column h-100">
-                                        <h5 class="card-title text-secondary fw-bold mb-4">Fitness Formula<p
-                                                class="mt-2 mb-0">專屬健議</p>
+                                        <h5 class="card-title text-secondary fw-bold mb-4">自由重量健身俱樂部<p
+                                                class="mt-2 mb-0">北門館【24hr】</p>
                                         </h5>
-                                        <p class="card-text d-none d-sm-block">位於明德路上的健身工作室，捷運走路約5分鐘可抵達，場地明亮乾淨</p>
+                                        <p class="card-text d-none d-sm-block">方案一�分鐘計費1分鐘1元<br>
+                                            方案二�月繳999元<br>
+                                            多元消費方案 不浪費您一分錢</p>
                                         <ul class="list-unstyled">
                                             <li>
                                                 <span
@@ -1035,10 +1016,10 @@ current: gym-list-area
                                                     class="material-symbols-outlined gymArea-icon active">local_drink</span>
                                             </li>
                                             <li>
-                                                <p class="mb-0">租借費用：<span>300 元 / 60 分鐘</span></p>
+                                                <p class="mb-0">租借費用：<span>150 元 / 60 分鐘</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">營業時間：<span>09:00 ~ 22:00</span></p>
+                                                <p class="mb-0">營業時間：<span>00:00 ~ 24:00</span></p>
                                             </li>
                                         </ul>
                                         <a href="./gym-detail.html"
@@ -1048,26 +1029,28 @@ current: gym-list-area
                             </div>
                         </div>
                     </div>
+
+                    <!-- pagination -->
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-end">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
 
-                <!-- pagination -->
-                <nav aria-label="Page navigation">
-                    <ul class="pagination justify-content-end">
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+
             </div>
         </div>
     </section>

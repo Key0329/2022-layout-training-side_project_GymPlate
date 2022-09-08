@@ -33,6 +33,13 @@
         right: 20px;
         bottom: 100px;
     }
+    .card{
+        border-right: 4px solid transparent !important;
+        &:hover{
+            // background-color: $primary-light;
+            border-right: 4px solid $primary !important;
+        }
+    }
 }
 
 .sticky-top-article-modal{
