@@ -28339,6 +28339,7 @@ main {
   position: fixed;
   right: 20px;
   bottom: 100px;
+  z-index: 3;
 }
 
 .forum__article .card {
