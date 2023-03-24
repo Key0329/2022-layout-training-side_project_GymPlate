@@ -1,3 +1,21 @@
+# 切版專案 - Gym Plate 運動場地分享平台 (獨立開發)
+
+![Alt text](https://github.com/Key0329/JoinSport/blob/main/src/assets/images/feature/Frame%207.png?raw=true)
+
+#### Demo：[https://key0329.github.io/GymPlate-layout-side-project-2022/](https://key0329.github.io/GymPlate-layout-side-project-2022/)
+
+### 網站功能 - 此專案為純切版專案
+◆ 參考澳洲網站 Centr 製作首頁版型
+◆ 參考 Dcard 製作論壇與發表文章、留言版型
+
+### 開發工具
+◆ 使用 BootStrap 5、SCSS 製作 RWD 版型
+◆ 搭配使用第三方套件如 Swiper 實現輪播、Masonry 製作瀑布流、AOS 視差滾動
+
+此專案可直接觀看頁面
+
+=========================================================================
+
 # 網頁切版直播班 Gulp 範例 - 加入 Bootstrap 版本
 
 > 使用該專案 Gulp 時，就可以不用使用其他編譯工具編譯 SCSS 或是 JavaScript 囉。
