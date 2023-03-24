@@ -4,13 +4,13 @@
 
 #### Demo：[https://key0329.github.io/GymPlate-layout-side-project-2022/](https://key0329.github.io/GymPlate-layout-side-project-2022/)
 
-### 網站功能 - 此專案為純切版專案
-◆ 參考澳洲網站 Centr 製作首頁版型
-◆ 參考 Dcard 製作論壇與發表文章、留言版型
+### 網站功能 - 此專案為純切版專案 </br>
+◆ 參考澳洲網站 Centr 製作首頁版型 </br>
+◆ 參考 Dcard 製作論壇與發表文章、留言版型 </br>
 
 ### 開發工具
-◆ 使用 BootStrap 5、SCSS 製作 RWD 版型
-◆ 搭配使用第三方套件如 Swiper 實現輪播、Masonry 製作瀑布流、AOS 視差滾動
+◆ 使用 BootStrap 5、SCSS 製作 RWD 版型 </br>
+◆ 搭配使用第三方套件如 Swiper 實現輪播、Masonry 製作瀑布流、AOS 視差滾動 </br>
 
 此專案可直接觀看頁面
 
